@@ -1,0 +1,162 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+font-family: Arial;
+background: url(1.jpg);
+}
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+</style>
+<script src="b.js"> </script>  
+</head> 
+
+<body>
+
+<h2>FlyDreamAir</h2>
+<p>Online Booking System</p>
+
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Flight Selection')">Flight Selection</button>
+  <button class="tablinks" onclick="openCity(event, 'Seat Selection')">Seat Selection</button>  
+  <button class="tablinks" onclick="openCity(event, 'Food/Drink Selection')">Food/Drink Selection</button>  
+  <button class="tablinks" onclick="openCity(event, 'Finalize Order')">Finalize Order</button>  
+</div>
+
+<div id="Seat Selection" class="tabcontent">
+<h3>Seat Selection</h3>
+<img src="seat-configuration.jpg" alt="Trulli" width="1000" height="300">
+</br></br>
+  <table>
+    <tr><td>Make Seat Selection</td><td><input type="text" id="" /></td></tr>
+    <tr></tr>
+    <tr></tr>
+    <tr><td><button>Save</button></tr>
+  </table>
+</br></br>
+</div>
+
+<div id="Food/Drink Selection" class="tabcontent">
+  <h3>Meal 1</h3>
+  <table>
+   <label for="food-select">Choose Food:</label>
+     <select name="food" id="food-select">
+      <option value="">--Please choose an option--</option>
+      <option value="CCwR">Chicken Curry w Rice</option>
+      <option value="SB">Spagheti Bologonese</option>
+      <option value="PFR">Pork Fried Rice</option>
+     </select>
+   </br></br>
+   <label for="drink-select">Choose Drink:</label>
+    <select name="drink" id="drink-select">
+     <option value="">--Please choose an option--</option>
+     <option value="Coke">Coke</option>
+     <option value="DietCoke">Diet Coke</option>
+     <option value="Wine">Wine</option>
+    </select>
+    </br></br>
+    <tr><td><button>Save</button></td></tr>
+  </table>
+  </br></br>
+  <h3>Meal 2</h3>
+  <table>
+   <label for="food-select">Choose Food:</label>
+     <select name="food" id="food-select">
+      <option value="">--Please choose an option--</option>
+      <option value="CCwR">Chicken Curry w Rice</option>
+      <option value="SB">Spagheti Bologonese</option>
+      <option value="PFR">Pork Fried Rice</option>
+     </select>
+   </br></br>
+   <label for="drink-select">Choose Drink:</label>
+    <select name="drink" id="drink-select">
+     <option value="">--Please choose an option--</option>
+     <option value="Coke">Coke</option>
+     <option value="DietCoke">Diet Coke</option>
+     <option value="Wine">Wine</option>
+    </select>
+    </br></br>
+    <tr><td><button>Save</button></td></tr>
+  </table>
+</div>
+
+<div id="Flight Selection" class="tabcontent">
+</br>
+<label for="from">From:</label>
+<select >
+  <option value="">Select a location...</option>
+  <option value="Sydney">Sydney</option>
+  <option value="Melbourne">Mebourne</option>
+  <option value="Canberra">Canberra</option>
+  <option value="Perth">Perth</option>
+  <option value="Brisbane">Brisbane</option>
+  <option value="Adelaide">Adelaide</option>
+  <option value="Darwin">Darwin</option>
+</select>
+</br></br>
+
+
+<label for="to">To:</label>
+<select>
+  <option value="">Select a location...</option>
+  <option value="Sydney">Sydney</option>
+  <option value="Melbourne">Mebourne</option>
+  <option value="Canberra">Canberra</option>
+  <option value="Perth">Perth</option>
+  <option value="Brisbane">Brisbane</option>
+  <option value="Adelaide">Adelaide</option>
+  <option value="Darwin">Darwin</option>
+</select>
+</br></br>
+
+
+<label for="departure">Departure date:</label>
+<input name="deparure" type="text" id="deparure" placeholder="Select date...">
+</br></br>
+
+
+<label for="return">Return date:</label>
+<input name="return" type="text" id="return" placeholder="Select date...">
+</br></br>
+
+<label for="round">Round</label>
+<input type="radio" name="trip" id="round" value="round">
+</br></br>       
+                                   
+<label for="oneway">Oneway</label>
+<input type="radio" name="trip" id="oneway" value="one-way">
+</br></br>
+
+<button>Save</button>
+</br></br></br>
+</div>
+
+
+<div id="Finalize Order" class="tabcontent">
+<h3>Finalize Order</h3>
+    <button onclick="window.location.href='index.html';">
+      Finalize Now
+    </button>
+</div>
+</body>
+</html> 

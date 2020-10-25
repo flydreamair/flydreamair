@@ -109,6 +109,7 @@ body {
     text-transform: uppercase;
     border: none;
     border-radius: 50px;
+    margin-top: 15px;
 }
 .plus-minus {
     display: flex;
@@ -150,8 +151,9 @@ body {
 /* Form fields */
 #search-form-field-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     margin-bottom: 15px;
+    flex-wrap: wrap;
 }
 
 #depart-field input, #arrive-field input, #depart-date-field input, #arrive-date-field input {
@@ -160,6 +162,8 @@ font-family: Roboto Slab;
 color: black;
 border-radius: 7px;
 border: 1px solid #d6d6d6;
+margin-right: 5px;
+margin-bottom: 5px;
 }
 ::-webkit-input-placeholder { /* Edge */
     color: black;
@@ -172,6 +176,12 @@ border: 1px solid #d6d6d6;
   }
   #depart-date-field input, #arrive-date-field input {
       max-width: 100px;
+  }
+  @media only screen and (max-width: 600px) {
+    #depart-field input, #arrive-field input, #depart-date-field input, #arrive-date-field input {
+      width: auto;
+      max-width: 900px;
+    }
   }
   #search-flight-btn {
     padding: 10px;

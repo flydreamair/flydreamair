@@ -13,6 +13,9 @@ $(function () {
 	let db, trans, users, flights, to_index, from_index;
 
 	openRequest.onupgradeneeded = function (e) {
+		
+		if (e.target.result.oldVersion == 0)
+			indexedDB.deleteDatabase('flydreamairDB');
 
 		let db = openRequest.result;
 		let users = db.createObjectStore("Customers", { keyPath: "uID" });

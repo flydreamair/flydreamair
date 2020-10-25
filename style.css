@@ -36,9 +36,9 @@ body {
 
 .flight-bg {
     background-image: url("images/plane-bg.jpg");
-    min-height: 500px;
+    min-height: 550px;
     background-attachment: fixed;
-    background-position: center;
+    background-position: bottom right;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -55,6 +55,17 @@ body {
     display: flex;
     width: 150px;
     align-items: center;
+}
+.book-trip {
+    border-bottom: 3px solid #ff6200;
+    margin-left: -30px;
+    padding-left: 30px;
+}
+.manage-booking {
+    padding-left: 30px;
+}
+.manage-booking:hover {
+    border-bottom: 3px solid #ff6200;
 }
 .book-trip img, .manage-booking img {
     align-self: center;
@@ -79,10 +90,10 @@ body {
 
 #main-form {
     background-color: white;
-    max-width: 600px;
+    max-width: 650px;
     margin: auto;
     border-radius: 30px;
-    padding: 10px 40px;
+    padding: 10px 30px;
     -webkit-box-shadow: 0px 0px 25px -1px rgba(72,100,217,1);
     -moz-box-shadow: 0px 0px 25px -1px rgba(72,100,217,1);
     box-shadow: 0px 0px 25px -1px rgba(72,100,217,1);
@@ -130,3 +141,52 @@ body {
     color: white;
     width: 25px;
 }
+
+#adult-number, #children-number, #infant-number {
+    font-family: Roboto Slab;
+    font-size: 18px;
+}
+
+/* Form fields */
+#search-form-field-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+#depart-field input, #arrive-field input, #depart-date-field input, #arrive-date-field input {
+padding: 10px 20px;
+font-family: Roboto Slab;
+color: black;
+border-radius: 7px;
+border: 1px solid #d6d6d6;
+}
+::-webkit-input-placeholder { /* Edge */
+    color: black;
+  }
+  :-ms-input-placeholder { /* Internet Explorer */
+    color: black;
+  }
+  ::placeholder {
+    color: black;
+  }
+  #depart-date-field input, #arrive-date-field input {
+      max-width: 100px;
+  }
+  #search-flight-btn {
+    padding: 10px;
+    background-color: #ff6200;
+    font-family: Roboto Slab;
+    color: white;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  #search-flight-btn:hover {
+      background-color: black;
+  }
+  #search-btn-container {
+    display: flex;
+    justify-content: center;
+  }

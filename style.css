@@ -8,28 +8,47 @@ p {
     font-family: Roboto Slab;
     font-weight: 400;
 }
+button {
+    padding: 10px;
+    background-color: #ff6200;
+    font-family: Roboto Slab;
+    color: white;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: black;
+}
 
 /* Index Styling */
 body {
     margin: 0px;
 }
 
-.logo-container {
+.logo-container, .login-container-dark {
     text-align: center;
     margin-bottom: 30px;
 }
 
-.login-container {
+.login-container, .login-container-dark {
     display: flex;
     justify-content: flex-end;
     align-items: center;
 }
-.login-container img {
+.login-container img, .login-container-dark img {
     padding-right: 10px;
 }
 .login-container a {
     text-decoration: none;
     color: white;
+    font-family: Roboto Slab;
+}
+.login-container-dark a {
+    text-decoration: none;
+    color: black;
     font-family: Roboto Slab;
 }
 
@@ -200,3 +219,93 @@ margin-bottom: 5px;
     display: flex;
     justify-content: center;
   }
+
+  /* search page styling */
+  .grey-box {
+      background-color: #ebebeb;
+      padding: 30px;
+  }
+
+  .bottom-bar {
+      background-color: #07111d;
+      color: white;
+      padding: 10px;
+      text-align: center;
+  }
+  .bottom-bar button:hover {
+      background-color: white;
+      color: black;
+      cursor: pointer;
+  }
+#flight-picked p {
+    line-height: 1.2em;
+    padding-bottom: 0px;
+    margin: 10px 30px 0px 30px;
+}
+#flight-picked-price p {
+    line-height: 1.2em;
+    font-size: 22px;
+    margin: 0px 30px;
+}
+.timeline {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    font-size: 14px;
+}
+.timeline-btns, .timeline-dots {
+    text-align: center;
+}
+.timeline-btns {
+    width: 70px;
+}
+.timeline-active {
+    color: #ff6200;
+}
+.timeline-inactive, .timeline-dots {
+    color: #c2c2c2;
+}
+@media only screen and (max-width: 600px) {
+    .timeline {
+      font-size: 12px;
+    }
+  }
+@media only screen and (max-width: 600px) {
+    .timeline-dots {
+      display: none;
+    }
+  }
+
+/* flight details that were searched */
+.flight-details-container {
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+    margin-bottom: 50px;
+}
+.flight-details-overview {
+    display: flex;
+    align-items: center;
+    line-height: 0.8em;
+}
+.flight-details-overview a {
+    color: #ff6200;
+    font-size: 12px;
+}
+.flight-details-overview img {
+    margin-right: 20px;
+}
+.departure-date {
+    font-size: 13px;
+}
+.search-flight-box {
+    background-color: white;
+    padding: 30px;
+    margin: 20px;
+    width: 500px;
+}
+.select-dropdown {
+    text-align: center;
+    font-family: Roboto Slab;
+    padding: 10px;
+}

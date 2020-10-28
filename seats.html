@@ -1,41 +1,79 @@
 <html>
     <head>
         <title>FlyDreamAir</title>
+        <link rel="stylesheet" href="style.css">
         <script>
 
         </script>
     </head>
     <body>
-        <!-- login area -->
-        <div>LOGIN</div>
 
-        <!-- logo area -->
-
-        <!-- timeline code to be copied here from completed page-->
-
-        <!-- start of grey box that displays the flights available -->
-        <div class="grey-box">
-            <h1>Choose Your Seats</h1>
-
-            <!-- dropdown -->
-            <div>
-                <label for="seat-selection">Adult 1</label>
-                <select name="seat-selection" id="seat-selection">
-                    <option value="" disabled selected hidden>Seat</option>
-                    <option value="1A">1A</option>
-                    <option value="1B">1B</option>
-                    <option value="1c">1C</option>
-                </select>
+        <div class="page-container">
+            <!-- login area -->
+            <div class="login-container-dark">
+                <a href="login.html"><img src="images/login-icon-dark.png" alt="Login icon" width="30px;" /></a>
+                <a href="login.html">LOGIN</a>
             </div>
-            <img src="" alt="" width="" />
-        </div>
-        <!-- end of grey box -->
+            
+            <!-- logo area -->
+            <div class="logo-container">
+                <a href="index.html"><img src="images/Dream-Air-original.png" width="250px"></a>
+            </div>
 
-        <!-- bottom bar -->
-        <div class="bottom-bar">
-            <button id="confirm-flight">Confirm Seats</button>
+            <!-- timeline -->
+            <div class="timeline">
+                <div class="timeline-btns">
+                    <img src="images/1-active.png" alt="first step" width="25px" />
+                    <p class="timeline-active">Flights</p>
+                </div>
+                <div class="timeline-dots">....................</div>
+                <div class="timeline-btns">
+                    <img src="images/2-active.png" alt="second step" width="25px" />
+                    <p class="timeline-active">Seats</p>
+                </div>
+                <div class="timeline-dots">....................</div>
+                <div class="timeline-btns">
+                    <img src="images/3-inactive.png" alt="third step" width="25px" />
+                    <p class="timeline-inactive">In-Flight</p>
+                </div>
+                <div class="timeline-dots">....................</div>
+                <div class="timeline-btns">
+                    <img src="images/4-inactive.png" alt="fourth step" width="25px" />
+                    <p class="timeline-inactive">Passengers</p>
+                </div>
+                <div class="timeline-dots">....................</div>
+                <div class="timeline-btns">
+                    <img src="images/5-inactive.png" alt="fifth step" width="25px" />
+                    <p class="timeline-inactive">Payment</p>
+                </div>
+            </div>
         </div>
-        <!-- end of bottom bar -->
+
+            <!-- start of grey box that displays the flights available -->
+            <div class="grey-box">
+
+                <h1 class="h1-center">Choose Your Seats</h1>
+
+                <!-- dropdown -->
+                <div class="seat-dropdown">
+                    <label for="seat-selection">Seat selection</label><br />
+                    <select name="seat-selection" id="seat-selection">
+                        <option value="" disabled selected hidden>Seat</option>
+                        <option value="1A">1A</option>
+                        <option value="1B">1B</option>
+                        <option value="1c">1C</option>
+                    </select>
+                </div>
+                <img src="images/plane-seats.png" alt="plane seats" width="100%" />
+
+            </div>
+            <!-- end of grey box -->
+
+            <!-- bottom bar -->
+            <div class="bottom-bar">
+                <button id="confirm-seats">Confirm seats</button>
+            </div>
+            <!-- end of bottom bar -->
 
     </body>
 </html>

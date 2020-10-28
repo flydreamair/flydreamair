@@ -1,10 +1,24 @@
+
+
 $(function () {
 
-   //depart=Sydney&arrive=Melbourne&departDate=2020-10-30
+	function add_minutes(dt, minutes) {
+
+		return new Date(dt.getTime() + minutes * 60000);
+
+	}
+
+	function pad(n) {
+
+		n = n + '';
+
+		return n.length >= 2 ? n : new Array(2 - n.length + 1).join(0) + n;
+
+	}
+
+	$("#clicked_flight").hide()
 
 	try {
-
-		$("#clicked_flight").hide()
 
 		var url_string = (window.location.href);
 		var url = new URL(url_string);
@@ -17,7 +31,7 @@ $(function () {
 		let month = departDate.getMonth();
 		let year = departDate.getFullYear();
 
-	   const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+		const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 		const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 
 		$("#from-to").text(depart + " to " + arrive);
@@ -44,11 +58,23 @@ $(function () {
 						atLeastOne = true;
 						//console.log(cursor.key + " " + cursor.value.From + " " + cursor.value.To + " " + cursor.value.Departure_Time + " " + cursor.value.Duration + " " + cursor.value.ECTicket + " " + cursor.value.BCTicket);
 
-						html_out += '<div class="search-flight-box" ><div><div class="flight-departure">';
-						html_out += cursor.value.From + '<br />' + days[day] + ', ' + date + ' ' + months[month] + ' ' + year + ' ' + cursor.value.Departure_Time;
-						html_out += '</div><div class="flight-arrival">';
-						html_out += cursor.value.To;
-						html_out += '</div></div></div><br /><br />';
+						html_out += '<div class="search-flight-box"><div><div class="flight-departure">';
+						html_out += cursor.value.From + '<br />' + days[day] + ', ' + date + ' ' + months[month] + ' ' + year + '<br />' + cursor.value.Departure_Time;
+						html_out += '</div><br /><div class="flight-arrival">';
+
+						let depart_time_from = cursor.value.Departure_Time.split(":");
+
+						let arrive_date = new Date(departDate);
+
+						arrive_date.setHours(depart_time_from[0]);
+						arrive_date.setMinutes(depart_time_from[1]);
+
+
+						let outDate = add_minutes(arrive_date, parseInt(cursor.value.Duration));
+
+						html_out += cursor.value.To + '<br />' + days[outDate.getDay()] + ', ' + outDate.getDate() + ' ' + months[outDate.getMonth()] + ' ' + outDate.getFullYear() + '<br />';
+						html_out += pad(outDate.getHours()) + ':' + pad(outDate.getMinutes());
+						html_out += '<br /><br /><button id="' + cursor.key + '"class="flight-is-being-booked">Book now</button></div></div></div><br /><br />';
 						
 
 					}
@@ -65,6 +91,7 @@ $(function () {
 				}
 
 				$("#flight-search-out-div").html(html_out);
+				db.close()
 
 			}
 
@@ -77,67 +104,21 @@ $(function () {
 
 	}
 
+	$("body").on("click", ".flight-is-being-booked", function () {
+
+		let key = $(this).attr("id");
+
+		let newRequest = indexedDB.open('flydreamairDB');
+
+		newRequest.onsuccess = () => {
+
+			let db = openRequest.result;
+			let trans = db.transaction("Flights", "readonly");
+			let flights = trans.objectStore("Flights");
+
+		}
+
+
+	});
+
 });
-
-/*<!--
-				<!-- start flight result 1 -->
-				<div class="search-flight-box">
-					<!-- left-side flight details -->
-					<div>
-						<div class="flight-departure">
-							Perth
-							Fri, 09 October 2020
-							13:00
-						</div>
-						<div class="flight-arrival">
-							Sydney
-							Fri, 09 October 2020
-							19:40
-						</div>
-						<div class="flight-time"><b>Flight time:</b> 5h 10m</div>
-					</div>
-					<!-- dotted divider -->
-
-					<!-- right-side flight number and price -->
-					<div>
-						<div class="flight-number">
-							DA735
-						</div>
-						<div class="flight-price">
-							<a href="">$626</a>
-						</div>
-					</div>
-				</div>
-				<!-- end flight result 1 -->
-
-
-				<!-- start flight result 2 -->
-				<div class="search-flight-box">
-					<!-- left-side flight details -->
-					<div>
-						<div class="flight-departure">
-							Perth
-							Fri, 09 October 2020
-							13:00
-						</div>
-						<div class="flight-arrival">
-							Sydney
-							Fri, 09 October 2020
-							19:40
-						</div>
-						<div class="flight-time"><b>Flight time:</b> 5h 10m</div>
-					</div>
-					<!-- dotted divider -->
-
-					<!-- right-side flight number and price -->
-					<div>
-						<div class="flight-number">
-							DA735
-						</div>
-						<div class="flight-price">
-							<a href="">$626</a>
-						</div>
-					</div>
-				</div>
-				<!-- end flight result 2 -->
-				-->*/

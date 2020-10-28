@@ -1,112 +1,112 @@
 <html>
 <head>
-    <title>FlyDreamAir</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<title>FlyDreamAir</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
-    <body>
+	<body>
 
-        <div class="flight-bg">
-            <div class="page-container">
-                <!-- login area -->
-                <div class="login-container">
-                    <img src="images/login-icon.png" alt="Login icon" width="30px;" />
-                    <a href="">LOGIN</a>
-                </div>
-                
-                <!-- logo area -->
-                <div class="logo-container">
-                <img src="images/Dream-Air-White.png" width="250px">
-                </div>
+		<div class="flight-bg">
+			<div class="page-container">
+				<!-- login area -->
+				<div class="login-container">
+					<img src="images/login-icon.png" alt="Login icon" width="30px;" />
+					<a href="login.html">LOGIN</a>
+				</div>
+				
+				<!-- logo area -->
+				<div class="logo-container">
+				<img src="images/Dream-Air-White.png" width="250px">
+				</div>
 
-                <!-- search form code -->
-                <div id="main-form">
-                    <div class="form-navigation">
-                        <div class="book-trip">
-                            <img src="images/book-flight-active.png" alt="Book flight icon" width="15px" />
-                            <h5>Book a trip</h5>
-                        </div>
-                        <!-- manage booking tab. ARCHIVED. -->
-                        <!-- <div class="manage-booking">
-                            <div class="manage-booking-icon"></div>
-                            <h5><a href="">Manage booking</a></h5>
-                        </div> -->
-                    </div>
+				<!-- search form code -->
+				<div id="main-form">
+					<div class="form-navigation">
+						<div class="book-trip">
+							<img src="images/book-flight-active.png" alt="Book flight icon" width="15px" />
+							<h5>Book a trip</h5>
+						</div>
+						<!-- manage booking tab. ARCHIVED. -->
+						<!-- <div class="manage-booking">
+							<div class="manage-booking-icon"></div>
+							<h5><a href="">Manage booking</a></h5>
+						</div> -->
+					</div>
 
-                    <!-- start of search form elements -->
-                    <div id="search-form-elements">
-                        <div class="search-option-buttons">
-                                <div class="trip-buttons">
-                                    <!-- round trip button -->
-                                    <!-- <button id="round-trip-btn">Round Trip</button> -->
-                                    <button id="one-way-id">One Way</button>
-                                </div>
-                                <!-- Passenger numbers. ARCHIVED -->
-                                <!-- <div class="option-item">
-                                    <p>Adults</p>
-                                    <div class="plus-minus">
-                                        <button id="adult-minus">-</button>
-                                        <div id="adult-number">1</div>
-                                        <button id="adult-addition">+</button>
-                                    </div>
-                                </div>
-                                <div class="option-item">
-                                    <p>Children <span class="passenger-age">(2-11)</span></p>
-                                    <div class="plus-minus">
-                                        <button id="children-minus">-</button>
-                                        <div id="children-number">1</div>
-                                        <button id="children-addition">+</button>
-                                    </div>
-                                </div>
-                                <div class="option-item">
-                                    <p>Infants <span class="passenger-age">(0-2)</span></p>
-                                    <div class="plus-minus">
-                                        <button id="infant-minus">-</button>
-                                        <div id="infant-number">1</div>
-                                        <button id="infant-addition">+</button>
-                                    </div>
-                                </div> -->
-                        </div>
-                        <form action="search.html" method="GET">
-                        <div id="search-form-field-container">
-                            <div id="depart-field">
-                                <div class="search-field-icons"></div>
-                                <input type="text" name="depart" placeholder="Where from?" />
-                            </div>
-                            <div id="arrive-field">
-                                <div class="search-field-icons"></div>
-                                <input type="text" name="arrive" placeholder="Where to?" />
-                            </div>
-                            <div id="depart-date-field">
-                                <div class="search-field-icons"></div>
-                                <input type="date" name="departDate" placeholder="Depart" />
-                            </div>
-                            <!-- arrive date field ARCHIVED -->
-                            <!-- <div id="arrive-date-field">
-                                <div class="search-field-icons"></div>
-                                <input placeholder="Arrive" />
-                            </div> -->
-                              <div id="search-btn-container"><input type="submit" value="Search Flights" id="search-flight-btn" /></div>
-                        </div>
-                        </form>
-                        </div>
-                        <!--<div id="search-btn-container"><button id="search-flight-btn">Search Flights</button></div>-->
-                    </div>
-                    <!-- end of search for elements -->
+					<!-- start of search form elements -->
+					<div id="search-form-elements">
+						<div class="search-option-buttons">
+								<div class="trip-buttons">
+									<!-- round trip button -->
+									<!-- <button id="round-trip-btn">Round Trip</button> -->
+									<button id="one-way-id">One Way</button>
+								</div>
+								<!-- Passenger numbers. ARCHIVED -->
+								<!-- <div class="option-item">
+									<p>Adults</p>
+									<div class="plus-minus">
+										<button id="adult-minus">-</button>
+										<div id="adult-number">1</div>
+										<button id="adult-addition">+</button>
+									</div>
+								</div>
+								<div class="option-item">
+									<p>Children <span class="passenger-age">(2-11)</span></p>
+									<div class="plus-minus">
+										<button id="children-minus">-</button>
+										<div id="children-number">1</div>
+										<button id="children-addition">+</button>
+									</div>
+								</div>
+								<div class="option-item">
+									<p>Infants <span class="passenger-age">(0-2)</span></p>
+									<div class="plus-minus">
+										<button id="infant-minus">-</button>
+										<div id="infant-number">1</div>
+										<button id="infant-addition">+</button>
+									</div>
+								</div> -->
+						</div>
+						<form action="search.html" method="GET">
+						<div id="search-form-field-container">
+							<div id="depart-field">
+								<div class="search-field-icons"></div>
+								<input type="text" name="depart" placeholder="Where from?" required />
+							</div>
+							<div id="arrive-field">
+								<div class="search-field-icons"></div>
+								<input type="text" name="arrive" placeholder="Where to?" required />
+							</div>
+							<div id="depart-date-field">
+								<div class="search-field-icons"></div>
+								<input type="date" name="departDate" placeholder="Depart" required />
+							</div>
+							<!-- arrive date field ARCHIVED -->
+							<!-- <div id="arrive-date-field">
+								<div class="search-field-icons"></div>
+								<input placeholder="Arrive" />
+							</div> -->
+							  <div id="search-btn-container"><input type="submit" value="Search Flights" id="search-flight-btn" /></div>
+						</div>
+						</form>
+						</div>
+						<!--<div id="search-btn-container"><button id="search-flight-btn">Search Flights</button></div>-->
+					</div>
+					<!-- end of search for elements -->
 
-                    <!-- start of manage booking elements. ARCHIVED. -->
-                    <!-- <div id="manage-booking-elements">
-                        <p>Log in to manage your existing booking and make changes to your personal details</p>
-                        <br />
-                        <input placeholder="Email address" />
-                        <input placeholder="Password" />
-                        <br />
-                        <button id="login-btn">Login</button>
-                    </div> -->
-                    <!-- end of manage booking elements -->
-                </div>
-            </div>
-        </div>
-        <script src="a.js"></script>
-    </body>
+					<!-- start of manage booking elements. ARCHIVED. -->
+					<!-- <div id="manage-booking-elements">
+						<p>Log in to manage your existing booking and make changes to your personal details</p>
+						<br />
+						<input placeholder="Email address" />
+						<input placeholder="Password" />
+						<br />
+						<button id="login-btn">Login</button>
+					</div> -->
+					<!-- end of manage booking elements -->
+				</div>
+			</div>
+		</div>
+		<script src="a.js"></script>
+	</body>
 </html>

@@ -4,6 +4,9 @@ h1, h2, h3, h4, h5, h6 {
     font-family: Roboto Slab;
     font-weight: 700;
 }
+.h1-center {
+    text-align: center;
+}
 p {
     font-family: Roboto Slab;
     font-weight: 400;
@@ -327,12 +330,12 @@ margin-bottom: 5px;
     font-size: 13px;
 }
 
-.select-dropdown {
+.select-dropdown, .seat-dropdown {
     text-align: center;
     font-family: Roboto Slab;
     padding: 10px;
 }
-select#sort-by {
+select#sort-by, select#seat-selection {
     padding: 10px;
     margin: 10px;
 }
@@ -459,4 +462,8 @@ button.contact-details-container  {
 .upcoming-col a {
     color: #ff6200;
     font-size: 13px;
+
+/* seats page styling */
+button#confirm-seats {
+    margin-top: 10px;
 }

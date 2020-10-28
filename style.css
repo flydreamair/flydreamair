@@ -298,14 +298,66 @@ margin-bottom: 5px;
 .departure-date {
     font-size: 13px;
 }
-.search-flight-box {
-    background-color: white;
-    padding: 30px;
-    margin: 20px;
-    width: 500px;
-}
+
 .select-dropdown {
     text-align: center;
     font-family: Roboto Slab;
     padding: 10px;
+}
+select#sort-by {
+    padding: 10px;
+    margin: 10px;
+}
+.search-flight-container {
+    display: flex;
+    justify-content: center;
+}
+.search-flight-box {
+    display: flex;
+    justify-content: space-between;
+    font-family: Roboto Slab;
+    background-color: white;
+    padding: 30px;
+    margin: 20px;
+    width: 500px;
+    min-height: 250px;
+}
+.flight-left-container, .flight-right-container {
+    text-align: center;
+    width: 50%;
+}
+.flight-left p {
+    margin: 0;
+}
+.flight-left-container {
+    border-right: dotted 1px gray;
+}
+.flight-left-container, .flight-right-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flight-price a {
+    color: #ff6200;
+    text-decoration: none;
+    font-size: 35px;
+}
+.flight-depart-city, .flight-arrive-city {
+    font-size: 22px;
+}
+.flight-depart-date, .flight-arrive-date {
+    font-size: 13px;
+}
+.flight-depart-time, .flight-arrive-time {
+    font-size: 17px;
+}
+.flight-time {
+    font-size: 11px;
+}
+.flight-arrow {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.flight-departure, .flight-arrival {
+    margin-bottom: 10px;
 }

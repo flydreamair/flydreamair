@@ -14,6 +14,9 @@ p {
 a {
     font-family: Roboto Slab;
 }
+table {
+    font-family: Roboto Slab;
+}
 button {
     padding: 10px;
     background-color: #ff6200;
@@ -200,7 +203,7 @@ body {
     flex-wrap: wrap;
 }
 
-#depart-field input, #arrive-field input, #depart-date-field input, #arrive-date-field input, #login-form input {
+#depart-field input, #arrive-field input, #depart-date-field input, #arrive-date-field input, #login-form input, .contact-col input {
 padding: 10px 20px;
 font-family: Roboto Slab;
 color: black;
@@ -389,6 +392,76 @@ select#sort-by, select#seat-selection {
 .flight-departure, .flight-arrival {
     margin-bottom: 10px;
 }
+
+/* account page styling */
+#account-container {
+    background-color: white;
+    max-width: 600px;
+    margin: -350px auto 50px auto;
+    border-radius: 30px;
+    padding: 20px 80px;
+    -webkit-box-shadow: 0px 0px 25px -1px rgba(72,100,217,1);
+    -moz-box-shadow: 0px 0px 25px -1px rgba(72,100,217,1);
+    box-shadow: 0px 0px 25px -1px rgba(72,100,217,1);
+}
+#account-header {
+    text-align: center;
+}
+#grey-account-box {
+    background-color: #ebebeb;
+    padding: 30px 30px;
+    width: 85%;
+    margin: auto;
+    text-align: center;
+}
+#grey-account-box a {
+    color: #ff6200;
+    font-size: 13px;
+}
+#grey-account-box h4 {
+    margin: 0;
+    font-weight: 700;
+}
+#grey-account-box p {
+    margin: 0;
+    padding-bottom: 15px;
+}
+.contact-details-container {
+    margin-top: 30px;
+}
+button.contact-details-container  {
+    text-align: center;
+}
+.contact-details-edit {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 15px;
+    width: 100%;
+}
+.contact-col input {
+    width: auto;
+    min-width: 250px;
+}
+.contact-col label {
+    font-family: Roboto Slab;
+}
+.account-save-button {
+    text-align: center;
+}
+.account-flight-details h4, .account-flight-details p {
+    text-align: center;
+}
+.account-flight-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px;
+    text-align: center;
+}
+.upcoming-col a {
+    color: #ff6200;
+    font-size: 13px;
 
 /* seats page styling */
 button#confirm-seats {

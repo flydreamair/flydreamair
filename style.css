@@ -8,6 +8,9 @@ p {
     font-family: Roboto Slab;
     font-weight: 400;
 }
+a {
+    font-family: Roboto Slab;
+}
 button {
     padding: 10px;
     background-color: #ff6200;
@@ -167,6 +170,25 @@ body {
     font-size: 18px;
 }
 
+/* login form */
+#login-form {
+    text-align: center;
+    padding: 10px 30px;
+}
+#login-form p {
+    font-size: 13px;
+}
+#login-form-container {
+    background-color: white;
+    max-width: 450px;
+    margin: auto;
+    border-radius: 30px;
+    padding: 10px 30px;
+    -webkit-box-shadow: 0px 0px 25px -1px rgba(72,100,217,1);
+    -moz-box-shadow: 0px 0px 25px -1px rgba(72,100,217,1);
+    box-shadow: 0px 0px 25px -1px rgba(72,100,217,1);
+}
+
 /* Form fields */
 #search-form-field-container {
     display: flex;
@@ -175,7 +197,7 @@ body {
     flex-wrap: wrap;
 }
 
-#depart-field input, #arrive-field input, #depart-date-field input, #arrive-date-field input {
+#depart-field input, #arrive-field input, #depart-date-field input, #arrive-date-field input, #login-form input {
 padding: 10px 20px;
 font-family: Roboto Slab;
 color: black;
@@ -183,6 +205,9 @@ border-radius: 7px;
 border: 1px solid #d6d6d6;
 margin-right: 5px;
 margin-bottom: 5px;
+}
+#login-form input {
+    min-width: 300px;
 }
 ::-webkit-input-placeholder { /* Edge */
     color: black;

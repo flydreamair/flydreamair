@@ -66,29 +66,32 @@
                                         <button id="infant-addition">+</button>
                                     </div>
                                 </div> -->
-                        </div>
-                        <div id="search-form-field-container">
-                            <div id="depart-field">
-                                <div class="search-field-icons"></div>
-                                <input placeholder="Where from?" />
-                            </div>
-                            <div id="arrive-field">
-                                <div class="search-field-icons"></div>
-                                <input placeholder="Where to?" />
-                            </div>
-                            <div id="depart-date-field">
-                                <div class="search-field-icons"></div>
-                                <input placeholder="Depart" />
-                            </div>
-                            <!-- arrive date field ARCHIVED -->
-                            <!-- <div id="arrive-date-field">
-                                <div class="search-field-icons"></div>
-                                <input placeholder="Arrive" />
-                            </div> -->
-                        </div>
-                        <div id="search-btn-container"><button id="search-flight-btn">Search Flights</button></div>
-                    </div>
-                    <!-- end of search for elements -->
+						<form action="search.html" method="GET">
+						<div id="search-form-field-container">
+							<div id="depart-field">
+								<div class="search-field-icons"></div>
+								<input type="text" name="depart" placeholder="Where from?" required />
+							</div>
+							<div id="arrive-field">
+								<div class="search-field-icons"></div>
+								<input type="text" name="arrive" placeholder="Where to?" required />
+							</div>
+							<div id="depart-date-field">
+								<div class="search-field-icons"></div>
+								<input type="date" name="departDate" placeholder="Depart" required />
+							</div>
+							<!-- arrive date field ARCHIVED -->
+							<!-- <div id="arrive-date-field">
+								<div class="search-field-icons"></div>
+								<input placeholder="Arrive" />
+							</div> -->
+							  <div id="search-btn-container"><input type="submit" value="Search Flights" id="search-flight-btn" /></div>
+						</div>
+						</form>
+						</div>
+						<!--<div id="search-btn-container"><button id="search-flight-btn">Search Flights</button></div>-->
+					</div>
+					<!-- end of search for elements -->
 
                     <!-- start of manage booking elements. ARCHIVED. -->
                     <!-- <div id="manage-booking-elements">

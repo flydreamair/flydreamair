@@ -11,13 +11,13 @@
         <div class="page-container">
             <!-- login area -->
             <div class="login-container-dark">
-                <img src="images/login-icon-dark.png" alt="Login icon" width="30px;" />
+                <a href="login.html"><img src="images/login-icon-dark.png" alt="Login icon" width="30px;" /></a>
                 <a href="login.html">LOGIN</a>
             </div>
             
             <!-- logo area -->
             <div class="logo-container">
-                <img src="images/Dream-Air-original.png" width="250px">
+                <a href="index.html"><img src="images/Dream-Air-original.png" width="250px"></a>
             </div>
 
             <!-- timeline -->
@@ -65,7 +65,91 @@
             <div id="flight-search-out-div" class="grey-box">
 
                 <!-- dropdown -->
-                
+                <div class="select-dropdown">
+                    <label for="sort-by">Sort by</label><br />
+                    <select name="sorting" id="sort-by">
+                        <option value="departure">Departure</option>
+                        <option value="price">Price</option>
+                        <option value="flight-time">Flight time</option>
+                    </select>
+                </div>
+
+                <div class="search-flight-container">
+                    <div class="search-flight-results">
+                        <!-- start flight result 1 -->
+                        <div class="search-flight-box">
+                            <!-- left-side flight details -->
+                            <div class="flight-left-container">
+                                <div class="flight-left">
+                                    <div class="flight-departure">
+                                        <p class="flight-depart-city">Perth</p>
+                                        <p class="flight-depart-date">Fri, 09 October 2020</p>
+                                        <p class="flight-depart-time">13:00</p>
+                                    </div>
+                                    <div class="flight-arrow">↓</div>
+                                    <div class="flight-arrival">
+                                        <p class="flight-arrive-city">Sydney</p>
+                                        <p class="flight-arrive-date">Fri, 09 October 2020</p>
+                                        <p class="flight-arrive-time">19:40</p>
+                                    </div>
+                                    <div class="flight-time"><b>Flight time:</b> 5h 10m</div>
+                                </div>
+                            </div>
+                            <!-- dotted divider -->
+
+                            <!-- right-side flight number and price -->
+                            <div class="flight-right-container">
+                                <div class="flight-right">
+                                    <div class="flight-number">
+                                        DA735
+                                    </div>
+                                    <div class="flight-price">
+                                        <a href="">$626</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end flight result 1 -->
+
+
+                        <!-- start flight result 2 -->
+                        <div class="search-flight-box">
+                            <!-- left-side flight details -->
+                            <div class="flight-left-container">
+                                <div class="flight-left">
+                                    <div class="flight-departure">
+                                        <p class="flight-depart-city">Perth</p>
+                                        <p class="flight-depart-date">Fri, 09 October 2020</p>
+                                        <p class="flight-depart-time">13:00</p>
+                                    </div>
+                                    <div class="flight-arrow">↓</div>
+                                    <div class="flight-arrival">
+                                        <p class="flight-arrive-city">Sydney</p>
+                                        <p class="flight-arrive-date">Fri, 09 October 2020</p>
+                                        <p class="flight-arrive-time">19:40</p>
+                                    </div>
+                                    <div class="flight-time"><b>Flight time:</b> 5h 10m</div>
+                                </div>
+                            </div>
+                            <!-- dotted divider -->
+
+                            <!-- right-side flight number and price -->
+                            <div class="flight-right-container">
+                                <div class="flight-right">
+                                    <div class="flight-number">
+                                        DA735
+                                    </div>
+                                    <div class="flight-price">
+                                        <a href="">$626</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end flight result 2 -->
+                    </div>
+                </div>
+
+            </div>
             <!-- end of grey box -->
 
             <!-- bottom bar -->

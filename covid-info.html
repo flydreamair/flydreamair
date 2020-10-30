@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <title>FlyDreamAir</title>
+        <link rel="stylesheet" href="style.css">
+        <script>
+
+        </script>
+    </head>
+    <body>
+
+        <div class="flight-bg">
+            <div class="page-container">
+                <!-- login area -->
+                <div class="login-container">
+                    <a href="login.html"><img src="images/login-icon.png" alt="Login icon" width="30px;" /></a>
+                    <a href="login.html">LOGIN</a>
+                </div>
+                
+                <!-- logo area -->
+                <div class="logo-container">
+                    <a href="index.html"><img src="images/Dream-Air-White.png" width="250px"></a>
+                </div>
+
+                <!-- search form code -->
+                <div id="login-form-container">
+
+                    <!-- start of login form code -->
+                    <div id="login-form">
+
+                        <!-- start of login elements -->
+                        <div id="login-form">
+                            <h2>COVID-19 Information</h2>
+                            <p>For general information please visit: <a href="https://www.health.gov.au/">https://www.health.gov.au/</a>></p>
+                            <br />
+                            <label for="state-select">Choose State:</label>
+                            <select name="state" id="state-select">
+                                <option value="">--Please choose an option--</option>
+                                <option value="ACT">Australian Capital Territory</option>
+                                <option value="NSW">New South Wales</option>
+                                <option value="NT">Northern Territory</option>
+                                <option value="QLD">Queensland</option>
+                                <option value="TAS">Tasmania</option>
+                                <option value="VIC">Victoria</option>
+                                <option value="WA">Western Australia</option>
+                                <option value="SA">South Australia</option>
+                            </select><br />
+                            <p><div id="state_covid_info" class="covid_info_text"></div></p>
+                        </div>
+                        <!-- end of login elements -->
+                    </div>
+                    <!-- end of login form code -->
+
+                </div>
+            </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="a.js"></script>
+        <script src="covid-info.js"></script>
+    </body>
+</html>

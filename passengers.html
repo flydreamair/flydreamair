@@ -1,82 +1,145 @@
 <html>
     <head>
         <title>FlyDreamAir</title>
+        <link rel="stylesheet" href="style.css">
         <script>
 
         </script>
     </head>
     <body>
-        <!-- login area -->
-        <div>LOGIN</div>
 
-        <!-- logo area -->
+        <div class="page-container">
+                <!-- login area -->
+                <div class="login-container-dark">
+                    <a href="login.html"><img src="images/login-icon-dark.png" alt="Login icon" width="30px;" /></a>
+                    <a href="login.html">LOGIN</a>
+                </div>
+            
+                <!-- logo area -->
+                <div class="logo-container">
+                    <a href="index.html"><img src="images/Dream-Air-original.png" width="250px"></a>
+                </div>
 
-        <!-- timeline code to be copied here from completed page-->
-
-        <!-- start of grey box that displays the flights available -->
-        <div class="grey-box">
-            <h1>Passenger Details</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla commodo non mauris non pharetra. Aliquam posuere a neque eget malesuada.</p>
-            <h3>Adult 1</h3>
-
-            <!-- start of white box -->
-            <div class="white-box">
-
-                    <!-- dropdown -->
-                    <div>
-                        <label for="title-selection">Title</label>
-                        <select name="title-selection" id="title-selection">
-                            <option value="" disabled selected hidden></option>
-                            <option value="Miss">Miss</option>
-                            <option value="Ms">Ms</option>
-                            <option value="Mrs">Mrs</option>
-                            <option value="Mr">Mr</option>
-                            <option value="Master">Master</option>
-                            <option value="MX">MX</option>
-                            <option value="Sir">Sir</option>
-                            <option value="Dr">Dr</option>
-                            <option value="Prof">Prof</option>
-                        </select>
+                    <!-- timeline -->
+                    <div class="timeline">
+                        <div class="timeline-btns">
+                            <img src="images/1-active.png" alt="first step" width="25px" />
+                            <p class="timeline-active">Flights</p>
+                        </div>
+                        <div class="timeline-dots">....................</div>
+                        <div class="timeline-btns">
+                            <img src="images/2-active.png" alt="second step" width="25px" />
+                            <p class="timeline-active">Seats</p>
+                        </div>
+                        <div class="timeline-dots">....................</div>
+                        <div class="timeline-btns">
+                            <img src="images/3-active.png" alt="third step" width="25px" />
+                            <p class="timeline-active">In-Flight</p>
+                        </div>
+                        <div class="timeline-dots">....................</div>
+                        <div class="timeline-btns">
+                            <img src="images/4-active.png" alt="fourth step" width="25px" />
+                            <p class="timeline-active">Passengers</p>
+                        </div>
+                        <div class="timeline-dots">....................</div>
+                        <div class="timeline-btns">
+                            <img src="images/5-inactive.png" alt="fifth step" width="25px" />
+                            <p class="timeline-inactive">Payment</p>
+                        </div>
                     </div>
-                    <label for="given-names">Given Names</label><br />
-                    <input name="given-names" type="text"><br />
-                    <label for="last-name">Last Name</label><br />
-                    <input name="last-name" type="text">
-
-                    <h5>Baggage</h5>
-                    <p>23kg check-in (included)</p>
-                    <input type="checkbox" />
-                    extra 23kg bag + $30
-
-                    <!-- start booking contact -->
-                    <h2>Booking Contact</h2>
-                    <p>The booking contact is able to log in and manage the booking.</p>
-                    <div>
-                        <label for="title-selection">Choose the booking contact</label><br />
-                        <select name="title-selection" id="title-selection">
-                            <option value="" disabled selected hidden></option>
-                            <option value="Adult1">Adult 1</option>
-                        </select>
-                    </div>
-                    <label for="email-address">Email address</label><br />
-                    <input name="email-address" type="text"><br />
-                    <label for="choose-password">Choose a password</label><br />
-                    <input name="choose-password" type="text"><br />
-
-                    <!-- end booking contact -->
-           
-           <!-- end of white box -->
-           </div>
-
-
         </div>
-        <!-- end of grey box -->
 
-        <!-- bottom bar -->
-        <div class="bottom-bar">
-            <button id="confirm-flight">Confirm</button>
-        </div>
-        <!-- end of bottom bar -->
+            <!-- start of grey box that displays the flights available -->
+            <div class="grey-box">
+
+                <div class="page-p-centered">
+                    <h1 class="h1-center">Passenger Details</h1>
+                    <p>Fill out information about the traveller.</p>
+                </div>
+
+                <!-- start of white box -->
+                <div class="white-box">
+
+                            <h3>Passenger</h3>
+                            <!-- dropdown -->
+                            <div>
+                                <label for="title-selection">Title</label><br />
+                                <select name="title-selection" id="title-selection">
+                                    <option value="" disabled selected hidden></option>
+                                    <option value="Miss">Miss</option>
+                                    <option value="Ms">Ms</option>
+                                    <option value="Mrs">Mrs</option>
+                                    <option value="Mr">Mr</option>
+                                    <option value="Master">Master</option>
+                                    <option value="MX">MX</option>
+                                    <option value="Sir">Sir</option>
+                                    <option value="Dr">Dr</option>
+                                    <option value="Prof">Prof</option>
+                                </select>
+                            </div>
+
+                            <div class="passenger-details-container">
+                                    <div class="given-name">
+                                        <label for="given-names">Given Names</label><br />
+                                        <input name="given-names" type="text"><br />
+                                    </div>
+                                    <div class="last-name">
+                                        <label for="last-name">Last Name</label><br />
+                                        <input name="last-name" type="text">
+                                    </div>
+                            </div>
+
+                            <br /><br /><hr />
+                            <br /><h3>Address</h3>
+                            <div class="street-address">
+                                <label for="street">Street Address</label><br />
+                                <input name="street" type="text"><br />
+                            </div>
+                            <div class="passenger-details-container">
+                                <div class="city">
+                                    <label for="city">City</label><br />
+                                    <input name="city" type="text"><br />
+                                </div>
+                                <div class="state">
+                                    <label for="state">State</label><br />
+                                    <input name="state" type="text"><br />
+                                </div>
+                                <div class="post-code">
+                                    <label for="post-code">Post Code</label><br />
+                                    <input name="post-code" type="text"><br />
+                                </div>
+                            </div>
+
+                            <br /><br /><hr />
+                            <br /><h3>Account Login Details</h3>
+                            <p>These will be the details you log in with to manage your booking.</p>
+                            <div class="passenger-details-container">
+                                    <div class="email-address">
+                                        <label for="email-address">Email address</label><br />
+                                        <input name="email-address" type="text"><br />
+                                    </div>
+                                    <div class="choose-password">
+                                        <label for="choose-password">Choose a password</label><br />
+                                        <input name="choose-password" type="text"><br />
+                                    </div>
+                            </div>
+                            
+
+                            <!-- end booking contact -->
+                    
+                </div>
+                <!-- end of white box -->
+
+            </div>
+                <!-- end of grey box -->
+
+
+
+            <!-- bottom bar -->
+            <div class="bottom-bar">
+                <button id="confirm-passenger">Confirm</button>
+            </div>
+            <!-- end of bottom bar -->
 
     </body>
 </html>

@@ -106,7 +106,7 @@ $(function () {
 	};
 
 
-	$("#state-select").change(function () {
+	$("#state-select").change(function() {
 
 		var state = $(this).val();
 
@@ -126,6 +126,8 @@ $(function () {
 			$("#state_covid_info").html(VIC_covid_html);
 		} else if (state == "WA") {
 			$("#state_covid_info").html(WA_covid_html);
+		} else if (state == "SA") {
+			$("#state_covid_info").html(SA_covid_html);
 		} else {
 			$("#state_covid_info").html("Selection Error");
 		}

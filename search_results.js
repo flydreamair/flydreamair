@@ -107,9 +107,118 @@ function bookMe(flightID) {
 
 	//Create a transaction and create a new flight object - add it to the current user if there is one
 	//If there isn't, create an object store in which the flight is temporarily held until the customer is registered
-		//Then, once registered, add the flight into the new customer object
+	//Then, once registered, add the flight into the new customer object
+
+	let openRequest = indexedDB.open('flydreamairDB');
+	openRequest.onsuccess = function (e) {
+
+		db = openRequest.result;
+		let trans = db.transaction(["Flights", "Customers"], "readwrite");
+
+		let flights = trans.objectStore('Flights');
+
+		let request = flights.openCursor();
+
+		request.onsuccess = () => {
+
+			let cursor = request.result;
+
+			if (cursor) {
+
+				if (cursor.key == flightID) {
+
+					if (localStorage.getItem("currentUser") != "") {
+						let customers = trans.objectStore('Customers');
+						let request2 = customers.openCursor();
+
+						request2.onsuccess = () => {
+
+							let cursor2 = request2.result;
+
+							if (cursor2) {
+
+								if (cursor2.key == localStorage.getItem("currentUser")) {
+									
+									let isU = true;
+									cursor2.value.flights.forEach((flightx) => {
+
+										if (flightx == cursor.key)
+											isU = false;
+
+									});
+									if (isU) {
+
+										let newFlights = [];
+										let newFlight = {
+
+											fID: cursor.key,
+											seat: "AA",
+											food: "AA",
+											drink: "AA",
+											entertainment: "AA",
+											person: {
+
+												title: "Mr",
+												givenNames: "Given Name",
+												lastName: "lN"
+
+											},
+											extra23kg: false,
+											bookingContact: {
+
+												chooseBookingContact: "Adult 1",
 
 
-	window.open("seats.html", "_parent");
-	
+											}
+
+										};
+
+										cursor2.value.flights.forEach((x) => {
+
+											if (typeof x != 'undefined')
+												newFlights.push(x);
+
+										});
+										newFlights.push(cursor.key);
+										let finalR = customers.put({
+
+											fullName: cursor2.value.fullName,
+											uID: cursor2.value.uID,
+											address: {
+
+												streetAddress: cursor2.value.address.streetAddress,
+												state: cursor2.value.address.state,
+												city: cursor2.value.address.city,
+												postcode: cursor2.value.address.postcode
+
+											},
+											email: cursor2.key,
+											password: cursor2.value.password,
+											flights: newFlights
+										});
+									}
+									
+								} else
+									cursor2.continue();
+							}
+
+						}
+					} else {
+
+
+
+
+					}
+
+				} else
+					cursor.continue();
+
+			}
+
+
+		}
+
+	}
+
+
 }

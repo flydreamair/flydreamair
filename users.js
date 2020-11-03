@@ -66,17 +66,8 @@ function registerMe() {
 			let addAttempt = users.add({
 
 				fullName: userInfo[0],
-				uID: userInfo[1],
-				address: {
-
-					streetAddress: userInfo[2],
-					state: userInfo[3],
-					city: userInfo[6],
-					postcode: userInfo[7]
-
-				},
-				email: userInfo[4],
-				password: userInfo[5],
+				email: userInfo[1],
+				password: userInfo[2],
 				flights: []
 
 			});

@@ -142,7 +142,7 @@ function bookMe(flightID) {
 									let isU = true;
 									cursor2.value.flights.forEach((flightx) => {
 
-										if (flightx == cursor.key)
+										if (flightx.fID == cursor.key)
 											isU = false;
 
 									});

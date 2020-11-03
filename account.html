@@ -44,18 +44,68 @@
                         <a href="">Edit your contact details or change your password</a>
                     </div>
 
+                <h1>Change details</h1>
                 <div class="contact-details-container">
-                        <div id="inputChangingDetails" class="contact-details-edit">
-                                    <div class="contact-col">
-                                        <label id="givenNames-label" for="given-names">Full name</label><br />
-                                        <input id="givenNames" name="given-names" /><br />
-                                    </div>
-                                    <div class="contact-col">
-                                        <label id="emailAddress-label" for="email-address">Email address</label><br />
-                                        <input id="emailAddress" name="email-address" /><br />
-                                        <label id="password-label"for="password">Password</label><br />
-                                        <input id="password" type="password" name="password" />
-                                    </div>
+                        <h3>Passenger</h3>
+                        <!-- dropdown -->
+                        <div>
+                            <label for="title-selection">Title</label><br />
+                            <select name="title-selection" id="title-selection">
+                                <option value="" disabled selected hidden></option>
+                                <option value="Miss">Miss</option>
+                                <option value="Ms">Ms</option>
+                                <option value="Mrs">Mrs</option>
+                                <option value="Mr">Mr</option>
+                                <option value="Master">Master</option>
+                                <option value="MX">MX</option>
+                                <option value="Sir">Sir</option>
+                                <option value="Dr">Dr</option>
+                                <option value="Prof">Prof</option>
+                            </select>
+                        </div>
+                        <div class="passenger-details-container">
+                            <div class="given-name">
+                                <label for="given-names">Given Names</label><br />
+                                <input name="given-names" type="text"><br />
+                            </div>
+                            <div class="last-name">
+                                <label for="last-name">Last Name</label><br />
+                                <input name="last-name" type="text">
+                            </div>
+                        </div>
+
+                        <br /><br /><hr />
+                        <br /><h3>Address</h3>
+                        <div class="street-address">
+                            <label for="street">Street Address</label><br />
+                            <input name="street" type="text"><br />
+                        </div>
+                        <div class="passenger-details-container">
+                            <div class="city">
+                                <label for="city">City</label><br />
+                                <input name="city" type="text"><br />
+                            </div>
+                            <div class="state">
+                                <label for="state">State</label><br />
+                                <input name="state" type="text"><br />
+                            </div>
+                            <div class="post-code">
+                                <label for="post-code">Post Code</label><br />
+                                <input name="post-code" type="text"><br />
+                            </div>
+                        </div>
+
+                        <br /><br /><hr />
+                        <br /><h3>Account Login Details</h3>
+                        <div class="passenger-details-container">
+                            <div class="email-address">
+                                <label for="email-address">Email address</label><br />
+                                <input name="email-address" type="text"><br />
+                            </div>
+                            <div class="choose-password">
+                                <label for="choose-password">Choose a password</label><br />
+                                <input name="choose-password" type="text"><br />
+                            </div>
                         </div>
                         <div class="account-save-button"><button onclick="changeDetails()">Save details</button></div>
                 </div>

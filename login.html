@@ -1,23 +1,17 @@
 <html>
-    <head>
-        <title>FlyDreamAir</title>
-        <link rel="stylesheet" href="style.css">
-        <script>
-
-        </script>
-    </head>
+<head>
+    <title>FlyDreamAir</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="users.js"></script>
+</head>
     <body>
 		<div class="covid-info">We understand that the COVID-19 pandemic has caused major changes. Please click
             <a href="covid-info.html">HERE</a> for information on COVID-19 travel rules & regulations for each state.</div>
             
         <div class="flight-bg">
             <div class="page-container">
-                <!-- login area -->
-                <div class="login-container">
-                    <a href="login.html"><img src="images/login-icon.png" alt="Login icon" width="30px;" /></a>
-                    <a href="login.html">LOGIN</a>
-                </div>
-                
+
                 <!-- logo area -->
                 <div class="logo-container">
                     <a href="index.html"><img src="images/Dream-Air-White.png" width="250px"></a>
@@ -34,10 +28,11 @@
                             <h2>Login</h2>
                             <p>Log in to manage your existing booking.</p>
                             <br />
-                            <input placeholder="Email address" /><br />
-                            <input placeholder="Password" />
+                            <input id="loginEmail" placeholder="Email address" /><br />
+                            <input type="password" id="loginPassword" placeholder="Password" />
                             <br /><br />
-                            <button id="login-btn">Login</button>
+                            <button id="login-btn" onclick="login()">Login</button>
+                            <button id="registerButton">Register</button>
                         </div>
                         <!-- end of login elements -->
                     </div>
@@ -46,5 +41,13 @@
                 </div>
             </div>
         </div>
+
+        <script>
+            $("#registerButton").click(function () {
+
+                window.open("register.html", "_parent");
+
+            });
+        </script>
     </body>
 </html>

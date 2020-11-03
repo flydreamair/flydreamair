@@ -1,11 +1,10 @@
 <html>
-    <head>
-        <title>FlyDreamAir</title>
-        <link rel="stylesheet" href="style.css">
-        <script>
-
-        </script>
-    </head>
+<head>
+    <title>FlyDreamAir</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="a.js"></script>
+</head>
     <body>
 		<div class="covid-info">We understand that the COVID-19 pandemic has caused major changes. Please click
 			<a href="covid-info.html">HERE</a> for information on COVID-19 travel rules & regulations for each state.</div>
@@ -14,13 +13,15 @@
             <div class="page-container">
                 <!-- login area -->
                 <div class="login-container">
-                    <a href="login.html"><img src="images/login-icon.png" alt="Login icon" width="30px;" /></a>
-                    <a href="login.html">LOGIN</a>
+                    <img src="images/login-icon.png" alt="Login icon" width="30px;" />
+                    <a id="currentUser" href="">LOGIN</a>
                 </div>
                 
                 <!-- logo area -->
                 <div class="logo-container">
-                    <a href="index.html"><img src="images/Dream-Air-White.png" width="250px"></a>
+
+                <a href="index.html"><img src="images/Dream-Air-White.png" width="250px"></a>
+
                 </div>
             </div>
         </div>
@@ -36,29 +37,27 @@
 
                     <div id="grey-account-box">
                         <h4>Name</h4>
-                        <p class="contact-details-name">Jane Michelle Doe</p>
+                        <p id="contactDetailsName" class="contact-details-name"></p>
                         <h4>Email</h4>
-                        <p class="contact-details-email">jane@outlook.com.au</p>
+                        <p id="contactDetailsEmail" class="contact-details-email"></p>
                         <br />
                         <a href="">Edit your contact details or change your password</a>
                     </div>
 
                 <div class="contact-details-container">
-                        <div class="contact-details-edit">
+                        <div id="inputChangingDetails" class="contact-details-edit">
                                     <div class="contact-col">
-                                        <label for="given-names">Given names</label><br />
-                                        <input name="given-names" /><br />
-                                        <label for="given-names">Last name</label><br />
-                                        <input name="last-name" />
+                                        <label id="givenNames-label" for="given-names">Full name</label><br />
+                                        <input id="givenNames" name="given-names" /><br />
                                     </div>
                                     <div class="contact-col">
-                                        <label for="email-address">Email address</label><br />
-                                        <input name="email-address" /><br />
-                                        <label for="password">Password</label><br />
-                                        <input name="password" />
+                                        <label id="emailAddress-label" for="email-address">Email address</label><br />
+                                        <input id="emailAddress" name="email-address" /><br />
+                                        <label id="password-label"for="password">Password</label><br />
+                                        <input id="password" type="password" name="password" />
                                     </div>
                         </div>
-                        <div class="account-save-button"><button>Save details</button></div>
+                        <div class="account-save-button"><button onclick="changeDetails()">Save details</button></div>
                 </div>
 
                 <!-- upcoming flight bookings -->
@@ -120,7 +119,7 @@
                         </div>
                     </div>
 
-
+                <button onclick="logout()">Log out</button>
 
             </div>
             <!-- end of account container code -->

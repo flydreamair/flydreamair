@@ -1,11 +1,11 @@
 <html>
-    <head>
-        <title>FlyDreamAir</title>
-        <link rel="stylesheet" href="style.css">
-        <script>
-
-        </script>
-    </head>
+<head>
+    <title>FlyDreamAir</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="a.js"></script>
+    <script src="search_results.js"></script>
+</head>
     <body>
 		<div class="covid-info">We understand that the COVID-19 pandemic has caused major changes. Please click
 			<a href="covid-info.html">HERE</a> for information on COVID-19 travel rules & regulations for each state.</div>
@@ -13,8 +13,8 @@
         <div class="page-container">
             <!-- login area -->
             <div class="login-container-dark">
-                <a href="login.html"><img src="images/login-icon-dark.png" alt="Login icon" width="30px;" /></a>
-                <a href="login.html">LOGIN</a>
+                <img src="images/login-icon-dark.png" alt="Login icon" width="30px;" />
+                <a id="currentUser" href="login.html">LOGIN</a>
             </div>
             
             <!-- logo area -->
@@ -56,106 +56,21 @@
                 <div class="flight-details-overview">
                     <img src="images/departure.png" alt="departure icon" width="50px" height="50px" />
                     <div class="flight-details">
-                        <p id="from-to">Perth to Sydney</p>
-                        <p class="departure-date">Fri, 09 October 2020</p>
-                        <a href="" class="change-search-criteria">Change search criteria</a>
+                        <p id="from-to"></p>
+                        <p id="search-results-departure-date" class="departure-date"></p>
+                        <a href="index.html" class="change-search-criteria">Change search criteria</a>
                     </div>
                 </div>
             </div>
 
             <!-- start of grey box that displays the flights available -->
-            <div class="grey-box">
-
-                <!-- dropdown -->
-                <div class="select-dropdown">
-                    <label for="sort-by">Sort by</label><br />
-                    <select name="sorting" id="sort-by">
-                        <option value="departure">Departure</option>
-                        <option value="price">Price</option>
-                        <option value="flight-time">Flight time</option>
-                    </select>
-                </div>
-
-                <div class="search-flight-container">
-                    <div class="search-flight-results">
-                        <!-- start flight result 1 -->
-                        <div class="search-flight-box">
-                            <!-- left-side flight details -->
-                            <div class="flight-left-container">
-                                <div class="flight-left">
-                                    <div class="flight-departure">
-                                        <p class="flight-depart-city">Perth</p>
-                                        <p class="flight-depart-date">Fri, 09 October 2020</p>
-                                        <p class="flight-depart-time">13:00</p>
-                                    </div>
-                                    <div class="flight-arrow">↓</div>
-                                    <div class="flight-arrival">
-                                        <p class="flight-arrive-city">Sydney</p>
-                                        <p class="flight-arrive-date">Fri, 09 October 2020</p>
-                                        <p class="flight-arrive-time">19:40</p>
-                                    </div>
-                                    <div class="flight-time"><b>Flight time:</b> 5h 10m</div>
-                                </div>
-                            </div>
-                            <!-- dotted divider -->
-
-                            <!-- right-side flight number and price -->
-                            <div class="flight-right-container">
-                                <div class="flight-right">
-                                    <div class="flight-number">
-                                        DA735
-                                    </div>
-                                    <div class="flight-price">
-                                        <a href="">$626</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- end flight result 1 -->
-
-
-                        <!-- start flight result 2 -->
-                        <div class="search-flight-box">
-                            <!-- left-side flight details -->
-                            <div class="flight-left-container">
-                                <div class="flight-left">
-                                    <div class="flight-departure">
-                                        <p class="flight-depart-city">Perth</p>
-                                        <p class="flight-depart-date">Fri, 09 October 2020</p>
-                                        <p class="flight-depart-time">13:00</p>
-                                    </div>
-                                    <div class="flight-arrow">↓</div>
-                                    <div class="flight-arrival">
-                                        <p class="flight-arrive-city">Sydney</p>
-                                        <p class="flight-arrive-date">Fri, 09 October 2020</p>
-                                        <p class="flight-arrive-time">19:40</p>
-                                    </div>
-                                    <div class="flight-time"><b>Flight time:</b> 5h 10m</div>
-                                </div>
-                            </div>
-                            <!-- dotted divider -->
-
-                            <!-- right-side flight number and price -->
-                            <div class="flight-right-container">
-                                <div class="flight-right">
-                                    <div class="flight-number">
-                                        DA735
-                                    </div>
-                                    <div class="flight-price">
-                                        <a href="">$626</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- end flight result 2 -->
-                    </div>
-                </div>
+            <div id='display-results' class="grey-box">
 
             </div>
             <!-- end of grey box -->
 
             <!-- bottom bar -->
-            <div class="bottom-bar">
+            <div id="bottom-display-bar" class="bottom-bar">
                 <div id="chosen-details">
                     <div id="flight-picked"><p>Perth to Sydney leaving Fri, 09/10/2020 @ 13:00 on DA735</p></div>
                     <div id="flight-picked-price"><p>$626</p></div>

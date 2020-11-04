@@ -8,6 +8,50 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
     font-size: 25px;
 }
+
+.h2-inflight{
+      text-align: center;
+      font-size: 18px;
+    }
+    .h2-center {
+      text-align: center;
+    }
+    .inflight-img {
+      border: 5px solid #ffffff;
+      border-radius: 4px;
+      padding: 5px;	
+      width: 75%;
+    }
+    .item-price {
+      color: #ff6200;
+      font-size: 20px;
+      float: left;
+      margin-left: 12%;
+      margin-top: 3%;
+    }
+    .inflight-grid {
+      width: 55%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .service-item{
+      text-align: center;	
+    }
+    .item-title{
+      font-size: 20px;
+    }
+    .check-inflight{
+      float: left;
+      margin-left: 20%;
+      margin-top: 7%;	
+    }
+    .footer-table{
+      color:white;
+      width: 20%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
 p, li {
     font-family: Roboto Slab;
     font-weight: 400;
@@ -315,12 +359,12 @@ margin-bottom: 5px;
       color: black;
       cursor: pointer;
   }
-#flight-picked p {
+#flight-picked p, #in-flight-picked p {
     line-height: 1.2em;
     padding-bottom: 0px;
     margin: 10px 30px 0px 30px;
 }
-#flight-picked-price p {
+#flight-picked-price p, #in-flight-picked-price p {
     line-height: 1.2em;
     font-size: 22px;
     margin: 0px 30px;

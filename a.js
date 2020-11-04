@@ -215,9 +215,10 @@ $(function () {
 
 						newHtmlOut += '<div class="in-flight-selections"><h3> In - flight selections</h3 ><hr />';
 						newHtmlOut += '<p class="main-meal">' + flightA.foodSubstantial + '</p><hr />';
+						newHtmlOut += '<p class="light-meal">' + flightA.foodLight + '</p><hr />';
 						newHtmlOut += '<p class="entertainment">' + flightA.entertainment + '</p><hr />';
 						newHtmlOut += '<p class="drink">' + flightA.drink + '</p><hr />';
-						newHtmlOut += '<a href = "" onclick="editFoodDetails()"> Edit in-flight selections</a ></div >';
+						newHtmlOut += '<a href = "in-flight.html" onclick="editFoodDetails()"> Edit in-flight selections</a ></div >';
 
 					});
 

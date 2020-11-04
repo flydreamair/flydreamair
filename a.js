@@ -175,7 +175,55 @@ $(function () {
 
 	});
 
+	let or = indexedDB.open("flydreamairDB");
 
+	or.onsuccess = () => {
+
+		let db = or.result;
+
+		let trans = db.transaction("Customers", "readwrite");
+		let customers = trans.objectStore("Customers");
+
+		let czy = customers.openCursor();
+
+		czy.onsuccess = () => {
+
+			let cursor = czy.result;
+
+			if (cursor) {
+
+				if (cursor.key == localStorage.getItem("currentUser")) {
+
+					let thisCust = cursor.value;
+					let newHtmlOut = '<div class="account-flight-details-overview">';
+
+					thisCust.flights.forEach((flightA) => {
+
+						newHtmlOut += '<div class="account-flight-details"><div class="upcoming-col">';
+						newHtmlOut += '<h3 id="from-to">' + flightA.From + " to " + flightA.To + "</h3><hr />";
+						newHtmlOut += '<p class="departure-date-account"><b>Departure date: </b>' + flightA.departDate + '</p><hr />';
+						newHtmlOut += '<p><b>Flight:</b> <span id="flight-number-account">' + flightA.fID + '</span></p><hr />';
+						newHtmlOut += '<p><b>Departs:</b> <span id="departs-account">' + flightA.Departure_Time + '</span></p><hr />';
+						newHtmlOut += '<p><b>Arrives:</b> <span id="arrives-account">' + flightA.arriveDate + '</span></p><hr />';
+						newHtmlOut += '<p><b>Flight time:</b> <span id="flight-time-account">' + flightA.Duration + ' minutes</span></p>';
+						newHtmlOut += '<a href = ""> To edit flight details, please contact FlyDreamAir</a ><br /><br /></div>';
+
+					});
+
+					newHtmlOut += "</div>"
+
+					$("#myFlightsId").html(newHtmlOut);
+
+				} else
+					cursor.continue();
+
+            }
+
+		}
+
+		db.close();
+
+	}
 
 });
 

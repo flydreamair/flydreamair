@@ -1,18 +1,26 @@
 <html>
-    <head>
-        <title>FlyDreamAir</title>
-        <link rel="stylesheet" href="style.css">
-        <script>
+<head>
+    <title>FlyDreamAir</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="a.js"></script>
+    <script src="seatBooking.js"></script>
+    <script src="payment.js"></script>
+    <script>
+        function confirmPayment() {
 
-        </script>
-    </head>
+            window.open("account.html", "_parent");
+
+        }
+    </script>
+</head>
     <body>
 
         <div class="page-container">
             <!-- login area -->
             <div class="login-container-dark">
-                <a href="login.html"><img src="images/login-icon-dark.png" alt="Login icon" width="30px;" /></a>
-                <a href="login.html">LOGIN</a>
+                <a><img src="images/login-icon-dark.png" alt="Login icon" width="30px;" /></a>
+                <a id="currentUser" href="login.html">LOGIN</a>
             </div>
             
             <!-- logo area -->
@@ -64,57 +72,8 @@
                                 <div class="search-flight-container">
                                     <div class="search-flight-results">
                                         <!-- start flight result 1 -->
-                                        <div class="search-flight-box-payment">
-                                                    <!-- left-side flight details -->
-                                                    <div class="flight-left-container">
-                                                        <div class="flight-left">
-                                                            <div class="flight-departure-payment">
-                                                                <table>
-                                                                    <tr>
-                                                                        <td colspan="2">Perth to Sydney</td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td colspan="2">Fri, 09 October 2020</td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>Flight:</td>
-                                                                        <td>DA735</td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>Departs:</td>
-                                                                        <td>13:00</td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>Arrives:</td>
-                                                                        <td>19:40</td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>Seat:</td>
-                                                                        <td>1C</td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>Flight time:</td>
-                                                                        <td>4h 40m</td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td colspan="2"><a href="">edit</a></td>
-                                                                    </tr>
-                                                                </table>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                
-                                                    <!-- right-side flight number and price -->
-                                                    <div class="flight-right-container">
-                                                        <div class="flight-right">
-                                                            <div class="flight-number">
-                                                                DA735
-                                                            </div>
-                                                            <div class="flight-price">
-                                                                $626
-                                                            </div>
-                                                        </div>
-                                                    </div>
+                                        <div id="firstOut" class="search-flight-box-payment">
+                                                   
                                         </div>
                                         <!-- end flight result 1 -->
                                     </div>
@@ -138,7 +97,7 @@
                                         <td class="in-flight-choice-price">$7.95</td>
                                     </tr>
                                     <tr>
-                                        <td colspan="2"><a href="">edit</a></td>
+                                        <td colspan="2"><a href="in-flight.html">edit</a></td>
                                     </tr>
                                 </table>
 
@@ -150,7 +109,7 @@
                                     <p>Ms Jane Mary Doe</p>
                                     <p>100 Something Street, SampleCity WA 6000</p>
                                     <p>jane@bigpond.com.au</p>
-                                    <a href="">edit</a>
+                                    <a href="accounts.html">edit</a>
                                 </div>
 
 
@@ -197,7 +156,7 @@
 
             <!-- bottom bar -->
             <div class="bottom-bar">
-                <button id="confirm-payment">Confirm & Pay</button>
+                <a href="account.html"> <button id="confirm-payment">Confirm & Pay</button></a>
             </div>
             <!-- end of bottom bar -->
 

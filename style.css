@@ -4,20 +4,25 @@ h1, h2, h3, h4, h5, h6 {
     font-family: Roboto Slab;
     font-weight: 700;
 }
+
 .h1-center {
     text-align: center;
     font-size: 25px;
 }
+
 p, li {
     font-family: Roboto Slab;
     font-weight: 400;
 }
+
 a {
     font-family: Roboto Slab;
 }
+
 table {
     font-family: Roboto Slab;
 }
+
 button {
     padding: 10px;
     background-color: #ff6200;
@@ -29,9 +34,10 @@ button {
     margin-bottom: 10px;
     cursor: pointer;
 }
-button:hover {
-    background-color: black;
-}
+
+    button:hover {
+        background-color: black;
+    }
 
 /* covid info styling */
 .covid-info {
@@ -47,34 +53,42 @@ button:hover {
     -moz-box-shadow: 0px 6px 10px 1px rgba(0,0,0,0.33);
     box-shadow: 0px 6px 10px 1px rgba(0,0,0,0.33);
 }
-.covid-info a {
-    text-decoration: none;
-    background-color: white;
-    color: #ff6200;
-    padding-left: 7px;
-    padding-right: 7px;
-    border-radius: 10px;
-}
-.covid-info a:hover {
-    background-color: black;
-    color: white;
-}
+
+    .covid-info a {
+        text-decoration: none;
+        background-color: white;
+        color: #ff6200;
+        padding-left: 7px;
+        padding-right: 7px;
+        border-radius: 10px;
+    }
+
+        .covid-info a:hover {
+            background-color: black;
+            color: white;
+        }
+
 select#state-select {
     padding: 10px;
     margin: 10px;
 }
+
 label#state-label {
     font-family: Roboto Slab;
 }
+
 .covid_info_text {
     text-align: left;
 }
-.covid_info_text p, .covid_info_text li {
-    font-size: 13px;
-}
-.covid_info_text a, #covid-form a {
-    color: #ff6200;
-}
+
+    .covid_info_text p, .covid_info_text li {
+        font-size: 13px;
+    }
+
+    .covid_info_text a, #covid-form a {
+        color: #ff6200;
+    }
+
 #last-updated {
     text-align: center;
 }
@@ -94,19 +108,22 @@ body {
     justify-content: flex-end;
     align-items: center;
 }
-.login-container img, .login-container-dark img {
-    padding-right: 10px;
-}
-.login-container a {
-    text-decoration: none;
-    color: white;
-    font-family: Roboto Slab;
-}
-.login-container-dark a {
-    text-decoration: none;
-    color: black;
-    font-family: Roboto Slab;
-}
+
+    .login-container img, .login-container-dark img {
+        padding-right: 10px;
+    }
+
+    .login-container a {
+        text-decoration: none;
+        color: white;
+        font-family: Roboto Slab;
+    }
+
+    .login-container-dark a {
+        text-decoration: none;
+        color: black;
+        font-family: Roboto Slab;
+    }
 
 
 .flight-bg {
@@ -126,26 +143,32 @@ body {
     display: flex;
     justify-content: flex-start;
 }
+
 .book-trip, .manage-booking {
     display: flex;
     width: 150px;
     align-items: center;
 }
+
 .book-trip {
     border-bottom: 3px solid #ff6200;
     margin-left: -30px;
     padding-left: 30px;
 }
+
 .manage-booking {
     padding-left: 30px;
 }
-.manage-booking:hover {
-    border-bottom: 3px solid #ff6200;
-}
-.book-trip img, .manage-booking img {
-    align-self: center;
-    padding-right: 5px;
-}
+
+    .manage-booking:hover {
+        border-bottom: 3px solid #ff6200;
+    }
+
+    .book-trip img, .manage-booking img {
+        align-self: center;
+        padding-right: 5px;
+    }
+
 .manage-booking-icon {
     background: url("images/manage-booking-inactive.png") no-repeat;
     display: inline-block;
@@ -154,10 +177,12 @@ body {
     height: 16px;
     margin-right: 10px;
 }
-.manage-booking-icon:hover {
-    background: url("images/manage-booking-active.png") no-repeat;
-    background-size: cover;
-}
+
+    .manage-booking-icon:hover {
+        background: url("images/manage-booking-active.png") no-repeat;
+        background-size: cover;
+    }
+
 .manage-booking a {
     color: #7e7e7e;
     text-decoration: none;
@@ -186,16 +211,19 @@ body {
     border-radius: 50px;
     margin-top: 15px;
 }
+
 .plus-minus {
     display: flex;
     justify-content: center;
 }
+
 .search-option-buttons {
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
     margin-bottom: 20px;
 }
+
 .option-item {
     margin-left: 15px;
     margin-right: 15px;
@@ -203,10 +231,12 @@ body {
     text-align: center;
     font-size: 13px;
 }
+
 #adult-number, #children-number, #infant-number {
     margin-left: 10px;
     margin-right: 10px;
 }
+
 #adult-minus, #adult-addition, #children-minus, #children-addition, #infant-minus, #infant-addition {
     border-radius: 50%;
     border: none;
@@ -228,9 +258,11 @@ body {
     text-align: center;
     padding: 10px 30px;
 }
-#login-form p {
-    font-size: 13px;
-}
+
+    #login-form p {
+        font-size: 13px;
+    }
+
 #login-form-container {
     background-color: white;
     max-width: 450px;
@@ -251,36 +283,43 @@ body {
 }
 
 #depart-field input, #arrive-field input, #depart-date-field input, #arrive-date-field input, #login-form input, input {
-padding: 10px 20px;
-font-family: Roboto Slab;
-color: black;
-border-radius: 7px;
-border: 1px solid #d6d6d6;
-margin-right: 5px;
-margin-bottom: 5px;
+    padding: 10px 20px;
+    font-family: Roboto Slab;
+    color: black;
+    border-radius: 7px;
+    border: 1px solid #d6d6d6;
+    margin-right: 5px;
+    margin-bottom: 5px;
 }
+
 #login-form input {
     min-width: 300px;
 }
+
 ::-webkit-input-placeholder { /* Edge */
     color: black;
-  }
-  :-ms-input-placeholder { /* Internet Explorer */
+}
+
+:-ms-input-placeholder { /* Internet Explorer */
     color: black;
-  }
-  ::placeholder {
+}
+
+::placeholder {
     color: black;
-  }
-  #depart-date-field input, #arrive-date-field input {
-      max-width: 200px;
-  }
-  @media only screen and (max-width: 600px) {
+}
+
+#depart-date-field input, #arrive-date-field input {
+    max-width: 200px;
+}
+
+@media only screen and (max-width: 600px) {
     #depart-field input, #arrive-field input, #depart-date-field input, #arrive-date-field input {
-      width: auto;
-      max-width: 900px;
+        width: auto;
+        max-width: 900px;
     }
-  }
-  #search-flight-btn {
+}
+
+#search-flight-btn {
     padding: 10px;
     background-color: #ff6200;
     font-family: Roboto Slab;
@@ -289,70 +328,82 @@ margin-bottom: 5px;
     border: none;
     border-radius: 5px;
     margin-bottom: 20px;
-  }
-  #search-flight-btn:hover {
-      background-color: black;
-  }
-  #search-btn-container {
+}
+
+    #search-flight-btn:hover {
+        background-color: black;
+    }
+
+#search-btn-container {
     display: flex;
     justify-content: center;
-  }
+}
 
-  /* search page styling */
-  .grey-box {
-      background-color: #ebebeb;
-      padding: 30px;
-  }
+/* search page styling */
+.grey-box {
+    background-color: #ebebeb;
+    padding: 30px;
+}
 
-  .bottom-bar {
-      background-color: #07111d;
-      color: white;
-      padding: 10px;
-      text-align: center;
-  }
-  .bottom-bar button:hover {
-      background-color: white;
-      color: black;
-      cursor: pointer;
-  }
+.bottom-bar {
+    background-color: #07111d;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+    .bottom-bar button:hover {
+        background-color: white;
+        color: black;
+        cursor: pointer;
+    }
+
 #flight-picked p {
     line-height: 1.2em;
     padding-bottom: 0px;
     margin: 10px 30px 0px 30px;
 }
+
 #flight-picked-price p {
     line-height: 1.2em;
     font-size: 22px;
     margin: 0px 30px;
 }
+
 .timeline {
     display: flex;
     justify-content: center;
     margin-top: 50px;
     font-size: 14px;
 }
+
 .timeline-btns, .timeline-dots {
     text-align: center;
 }
+
 .timeline-btns {
     width: 70px;
 }
+
 .timeline-active {
     color: #ff6200;
 }
+
 .timeline-inactive, .timeline-dots {
     color: #c2c2c2;
 }
+
 @media only screen and (max-width: 600px) {
     .timeline {
-      font-size: 12px;
+        font-size: 12px;
     }
-  }
+}
+
 @media only screen and (max-width: 600px) {
     .timeline-dots {
-      display: none;
+        display: none;
     }
-  }
+}
 
 /* flight details that were searched */
 .flight-details-container {
@@ -361,18 +412,22 @@ margin-bottom: 5px;
     margin: 30px;
     margin-bottom: 50px;
 }
+
 .flight-details-overview {
     display: flex;
     align-items: center;
     line-height: 0.8em;
 }
-.flight-details-overview a {
-    color: #ff6200;
-    font-size: 12px;
-}
-.flight-details-overview img {
-    margin-right: 20px;
-}
+
+    .flight-details-overview a {
+        color: #ff6200;
+        font-size: 12px;
+    }
+
+    .flight-details-overview img {
+        margin-right: 20px;
+    }
+
 .departure-date {
     font-size: 13px;
 }
@@ -383,6 +438,7 @@ margin-bottom: 5px;
     padding: 8px;
     margin-bottom: 10px;
 }
+
 select#sort-by, select#seat-selection, select#title-selection, select#payment-method {
     padding: 8px;
     border: 1px solid #d6d6d6;
@@ -390,10 +446,12 @@ select#sort-by, select#seat-selection, select#title-selection, select#payment-me
     margin-bottom: 10px;
     margin-top: 10px;
 }
+
 .search-flight-container {
     display: flex;
     justify-content: center;
 }
+
 .search-flight-box {
     display: flex;
     justify-content: space-between;
@@ -404,47 +462,59 @@ select#sort-by, select#seat-selection, select#title-selection, select#payment-me
     width: 500px;
     min-height: 250px;
 }
+
 .flight-left-container, .flight-right-container {
     text-align: center;
     width: 50%;
 }
+
 .flight-left p {
     margin: 0;
 }
+
 .flight-left-container {
     border-right: dotted 1px gray;
 }
+
 @media only screen and (max-width: 700px) {
     .flight-left-container {
         border-right: hidden;
     }
-  }
+}
+
 .flight-left-container, .flight-right-container {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .flight-price a, .flight-price {
     color: #ff6200;
     text-decoration: none;
     font-size: 35px;
 }
+
 .flight-depart-city, .flight-arrive-city {
     font-size: 22px;
 }
+
 .flight-depart-date, .flight-arrive-date {
     font-size: 13px;
 }
+
 .flight-depart-time, .flight-arrive-time {
     font-size: 17px;
 }
+
 .flight-time {
     font-size: 11px;
 }
+
 .flight-arrow {
     font-size: 30px;
     margin-bottom: 10px;
 }
+
 .flight-departure, .flight-arrival {
     margin-bottom: 10px;
 }
@@ -460,9 +530,11 @@ select#sort-by, select#seat-selection, select#title-selection, select#payment-me
     -moz-box-shadow: 0px 0px 25px -1px rgba(72,100,217,1);
     box-shadow: 0px 0px 25px -1px rgba(72,100,217,1);
 }
+
 #account-header {
     text-align: center;
 }
+
 #grey-account-box {
     background-color: #ebebeb;
     padding: 30px 30px;
@@ -470,24 +542,30 @@ select#sort-by, select#seat-selection, select#title-selection, select#payment-me
     margin: auto;
     text-align: center;
 }
-#grey-account-box a {
-    color: #ff6200;
-    font-size: 13px;
-}
-#grey-account-box h4 {
-    margin: 0;
-    font-weight: 700;
-}
-#grey-account-box p {
-    margin: 0;
-    padding-bottom: 15px;
-}
+
+    #grey-account-box a {
+        color: #ff6200;
+        font-size: 13px;
+    }
+
+    #grey-account-box h4 {
+        margin: 0;
+        font-weight: 700;
+    }
+
+    #grey-account-box p {
+        margin: 0;
+        padding-bottom: 15px;
+    }
+
 .contact-details-container {
     margin-top: 30px;
 }
-button.contact-details-container  {
+
+button.contact-details-container {
     text-align: center;
 }
+
 .contact-details-edit {
     display: flex;
     flex-wrap: wrap;
@@ -495,20 +573,25 @@ button.contact-details-container  {
     margin-bottom: 15px;
     width: 100%;
 }
+
 .contact-col input {
     width: auto;
     min-width: 250px;
     margin-top: 10px;
 }
+
 .contact-col label {
     font-family: Roboto Slab;
 }
+
 .account-save-button {
     text-align: center;
 }
+
 .account-flight-details h4, .account-flight-details p {
     text-align: center;
 }
+
 .account-flight-details {
     display: flex;
     flex-wrap: wrap;
@@ -516,6 +599,7 @@ button.contact-details-container  {
     margin: 20px;
     text-align: center;
 }
+
 .upcoming-col a {
     color: #ff6200;
     font-size: 13px;
@@ -535,44 +619,52 @@ div.white-box {
     padding: 50px;
     margin-bottom: 30px;
 }
-div.white-box a {
-    color: #ff6200;
-}
+
+    div.white-box a {
+        color: #ff6200;
+    }
+
 .page-p-centered {
     max-width: 600px;
     margin: 0px auto 50px auto;
 }
-.page-p-centered p {
-    text-align: center;
-}
+
+    .page-p-centered p {
+        text-align: center;
+    }
+
 div.passenger-details-container {
     display: flex;
     flex-wrap: wrap;
 }
+
 .given-name input, .last-name input, .city input, .state input, .email-address input, .choose-password input {
     width: 290px;
     margin-right: 10px;
     margin-top: 10px;
     margin-bottom: 15px;
 }
+
 .post-code input {
     width: 100px;
     margin-right: 10px;
     margin-top: 10px;
     margin-bottom: 15px;
 }
+
 .street-address input {
     width: 100%;
     margin-right: 10px;
     margin-top: 10px;
     margin-bottom: 15px;
 }
+
 @media only screen and (max-width: 600px) {
     .street-address input, .given-name input, .last-name input, .email-address input, .choose-password input {
-      width: 100%!important;
-      max-width: 100%;
+        width: 100% !important;
+        max-width: 100%;
     }
-  }
+}
 
 #confirm-passenger, #confirm-payment {
     margin-top: 10px;
@@ -589,63 +681,75 @@ div.passenger-details-container {
     width: 500px;
     min-height: 250px;
 }
+
 @media only screen and (max-width: 600px) {
     .search-flight-box-payment {
-      display: block;
-      margin: auto;
-      width: 100%;
-      max-width: 250px;
-      text-align: center;
-    }
-    .search-flight-box-payment table {
-        width: 200px;
+        display: block;
         margin: auto;
+        width: 100%;
+        max-width: 250px;
+        text-align: center;
     }
+
+        .search-flight-box-payment table {
+            width: 200px;
+            margin: auto;
+        }
+
     div.flight-right-container, div.flight-left-container {
         width: 100%;
     }
+
     div.flight-left {
         display: flex;
         justify-content: center;
     }
-  }
-  table.in-flight-choices-container {
-        margin: 20px auto;
-  }
-  div.passenger-details-payment {
-      text-align: center;
-      margin-top: 50px;
-  }
-  .passenger-details-payment p {
-      margin: 0;
-  }
-  .total-price-payment {
-      text-align: center;
-      margin-top: 50px;
-  }
-  .total-price-payment h2 {
-      margin: 0;
-  }
-  #flights-total-price {
-      font-size: 35px;
-      color: #ff6200;
-      margin: 0px 20px 20px 20px;
-  }
-  /* covid warning box */
-  .warning-box {
-      background-color: #fdd1b6;
-      font-family: Roboto Slab;
-      margin: auto;
-      max-width: 600px;
-      padding: 30px 50px;
-      margin-bottom: 30px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-  }
-  .covid-warning-text {
-      margin-left: 20px;
-  }
-  .covid-warning-text a {
-    color: #ff6200;
 }
+
+table.in-flight-choices-container {
+    margin: 20px auto;
+}
+
+div.passenger-details-payment {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.passenger-details-payment p {
+    margin: 0;
+}
+
+.total-price-payment {
+    text-align: center;
+    margin-top: 50px;
+}
+
+    .total-price-payment h2 {
+        margin: 0;
+    }
+
+#flights-total-price {
+    font-size: 35px;
+    color: #ff6200;
+    margin: 0px 20px 20px 20px;
+}
+/* covid warning box */
+.warning-box {
+    background-color: #fdd1b6;
+    font-family: Roboto Slab;
+    margin: auto;
+    max-width: 600px;
+    padding: 30px 50px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.covid-warning-text {
+    margin-left: 20px;
+}
+
+    .covid-warning-text a {
+        color: #ff6200;
+    }

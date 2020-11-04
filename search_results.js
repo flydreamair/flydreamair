@@ -19,6 +19,7 @@ $(function () {
 	try {
 
 		var url_string = (window.location.href);
+		localStorage.setItem("urlString", url_string);
 		var url = new URL(url_string);
 		var depart = url.searchParams.get("depart");
 		var arrive = url.searchParams.get("arrive");
@@ -54,17 +55,20 @@ $(function () {
 
 					if (cursor.value.From == depart && cursor.value.To == arrive) {
 						atLeastOne = true;
-						console.log(cursor.key + " " + cursor.value.From + " " + cursor.value.To + " " + cursor.value.Departure_Time + " " + cursor.value.Duration + " " + cursor.value.ECTicket + " " + cursor.value.BCTicket);
+						//console.log(cursor.key + " " + cursor.value.From + " " + cursor.value.To + " " + cursor.value.Departure_Time + " " + cursor.value.Duration + " " + cursor.value.ECTicket + " " + cursor.value.BCTicket);
 
 						let depart_time_from = cursor.value.Departure_Time.split(":");
 
 						let arrive_date = new Date(departDate);
+						sessionStorage.setItem("departDate", days[departDate.getDay()] + ', ' + departDate.getDate() + ' ' + months[departDate.getMonth()] + ' ' + departDate.getFullYear());
 
 						arrive_date.setHours(depart_time_from[0]);
 						arrive_date.setMinutes(depart_time_from[1]);
 
 
 						let outDate = add_minutes(arrive_date, parseInt(cursor.value.Duration));
+
+						sessionStorage.setItem("arriveDate", days[outDate.getDay()] + ', ' + outDate.getDate() + ' ' + months[outDate.getMonth()] + ' ' + outDate.getFullYear());
 
 						html_out += '<div id="' + cursor.key + '" style="cursor:pointer;" class="search-flight-box" onclick="bookMe(' + cursor.key + ')" ><div class="flight-left-container"><div class="flight-left"><div class="flight-departure">';
 						html_out += '<p class="flight-depart-city">' + cursor.value.From + '</p><p class="flight-depart-date">' + days[day] + ', ' + date + ' ' + months[month] + ' ' + year + ' </p >' + '<p class="flight-depart-time">' + cursor.value.Departure_Time + '</p>';
@@ -152,24 +156,26 @@ function bookMe(flightID) {
 										let newFlight = {
 
 											fID: cursor.key,
+											From: cursor.value.From,
+											To: cursor.value.To,
+											Departure_Time: cursor.value.Departure_Time,
+											Duration: cursor.value.Duration,
+											ECTicket: cursor.value.ECTicket,
+											BCTicket: cursor.value.BCTicket,
+											departDate: sessionStorage.getItem("departDate"),
+											arriveDate: sessionStorage.getItem("arriveDate"),
 											seat: "AA",
 											food: "AA",
 											drink: "AA",
 											entertainment: "AA",
 											person: {
 
-												title: "Mr",
-												givenNames: "Given Name",
-												lastName: "lN"
+												title: cursor2.value.title,
+												givenNames: cursor2.value.givenNames,
+												lastName: cursor2.value.lastName
 
 											},
-											extra23kg: false,
-											bookingContact: {
-
-												chooseBookingContact: "Adult 1",
-
-
-											}
+											extra23kg: false
 
 										};
 
@@ -179,24 +185,27 @@ function bookMe(flightID) {
 												newFlights.push(x);
 
 										});
-										newFlights.push(cursor.key);
+										newFlights.push(newFlight);
 										let finalR = customers.put({
 
-											fullName: cursor2.value.fullName,
-											uID: cursor2.value.uID,
+											title: cursor2.value.title,
+											givenNames: cursor2.value.givenNames,
+											lastName: cursor2.value.lastName,
 											address: {
 
-												streetAddress: cursor2.value.address.streetAddress,
-												state: cursor2.value.address.state,
+												street: cursor2.value.address.street,
 												city: cursor2.value.address.city,
-												postcode: cursor2.value.address.postcode
+												state: cursor2.value.address.state,
+												postCode: cursor2.value.address.postCode
 
 											},
-											email: cursor2.key,
+											email: cursor2.value.email,
 											password: cursor2.value.password,
 											flights: newFlights
 										});
 									}
+
+									window.open("seats.html", "_parent");
 									
 								} else
 									cursor2.continue();
@@ -205,7 +214,7 @@ function bookMe(flightID) {
 						}
 					} else {
 
-
+						window.open("login.html", "_parent");
 
 
 					}

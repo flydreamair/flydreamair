@@ -2,12 +2,15 @@
 //localStorage.clear();
 $(function () {
 
+
 	let currentUser = "";
 
 	if ("currentUser" in localStorage)
 		currentUser = localStorage.getItem("currentUser");
 	else
 		localStorage.setItem("currentUser", currentUser);
+
+	console.log(currentUser)
 
 	if (currentUser != "") {
 
@@ -25,7 +28,7 @@ $(function () {
 				let cursor = name.result;
 				if (currentUser == cursor.key) {
 
-					let thisCustomerName = cursor.value.fullName;
+					let thisCustomerName = cursor.value.givenNames;
 					$("#currentUser").text(thisCustomerName).attr("href", "account.html");
 					$("#contactDetailsName").text(thisCustomerName);
 					$("#contactDetailsEmail").text(cursor.key);

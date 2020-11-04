@@ -56,6 +56,7 @@ function registerMe() {
 
 	if (canContinue) {
 
+
 		let request = indexedDB.open('flydreamairDB');
 		request.onsuccess = () => {
 
@@ -63,11 +64,23 @@ function registerMe() {
 			let trans = databaseb.transaction('Customers', 'readwrite');
 			let users = trans.objectStore('Customers');
 
+			console.log("hi");
+
 			let addAttempt = users.add({
 
-				fullName: userInfo[0],
-				email: userInfo[1],
-				password: userInfo[2],
+				title: userInfo[0],
+				givenNames: userInfo[1],
+				lastName: userInfo[2],
+				address: {
+
+					street: userInfo[3],
+					city: userInfo[4],
+					state: userInfo[5],
+					postCode: userInfo[6]
+
+				},
+				email: userInfo[7],
+				password: userInfo[8],
 				flights: []
 
 			});
@@ -79,7 +92,7 @@ function registerMe() {
 			}
 			addAttempt.onsuccess = () => {
 
-				thisUser = userInfo[4];
+				thisUser = userInfo[7];
 				localStorage.setItem("currentUser", thisUser);
 				window.open("index.html", "_parent");
 

@@ -2,7 +2,11 @@
     <head>
         <title>FlyDreamAir</title>
         <script>
+            function skipThis() {
 
+                window.open("payment.html", "_parent");
+
+            }
         </script>
     </head>
     <body>
@@ -78,7 +82,7 @@
                 <h6>In-Flight Services</h6>
                 <div id="services-picked-price">$39.75</div>
             </div>
-            <button id="confirm-flight">Confirm</button>
+            <button onclick="skipThis()" "id="confirm-flight">Confirm</button>
         </div>
         <!-- end of bottom bar -->
 

@@ -1,86 +1,270 @@
 <html>
     <head>
         <title>FlyDreamAir</title>
+        <link rel="stylesheet" href="style.css">
         <script>
 
         </script>
     </head>
     <body>
-        <!-- login area -->
-        <div>LOGIN</div>
+		<div class="covid-info">We understand that the COVID-19 pandemic has caused major changes. Please click
+			<a href="covid-info.html">HERE</a> for information on COVID-19 travel rules & regulations for each state.</div>
 
-        <!-- logo area -->
-
-        <!-- timeline code to be copied here from completed page-->
-
-        <!-- start of grey box that displays the flights available -->
-        <div class="grey-box">
-            <h1>Choose Your In-flight Options</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla commodo non mauris non pharetra. Aliquam posuere a neque eget malesuada.</p>
-            <h2>SOMETHING SUBSTANTIAL</h2>
-            <div class="services-options-container">
-                <div class="service-item" style="border: solid 1px black">
-                    <img src="" alt="" width="">
-                    <input type="checkbox">
-                    <p class="item-price">$7.95</p>
-                    <h5 class="item-title">Delicious Wrap</h5>
-                    <p class="item-description">Lorem ipsum dolor sit amet consectetur.</p>
-                </div>
-                <div class="service-item" style="border: solid 1px black">
-                    <img src="" alt="" width="">
-                    <input type="checkbox">
-                    <p class="item-price">$7.95</p>
-                    <h5 class="item-title">Delicious Wrap</h5>
-                    <p class="item-description">Lorem ipsum dolor sit amet consectetur.</p>
-                </div>
-                <div class="service-item" style="border: solid 1px black">
-                    <img src="" alt="" width="">
-                    <input type="checkbox">
-                    <p class="item-price">$7.95</p>
-                    <h5 class="item-title">Delicious Wrap</h5>
-                    <p class="item-description">Lorem ipsum dolor sit amet consectetur.</p>
-                </div>
-                <div class="service-item" style="border: solid 1px black">
-                    <img src="" alt="" width="">
-                    <input type="checkbox">
-                    <p class="item-price">$7.95</p>
-                    <h5 class="item-title">Delicious Wrap</h5>
-                    <p class="item-description">Lorem ipsum dolor sit amet consectetur.</p>
-                </div>
-                <div class="service-item" style="border: solid 1px black">
-                    <img src="" alt="" width="">
-                    <input type="checkbox">
-                    <p class="item-price">$7.95</p>
-                    <h5 class="item-title">Delicious Wrap</h5>
-                    <p class="item-description">Lorem ipsum dolor sit amet consectetur.</p>
-                </div>
+        <div class="page-container">
+            <!-- login area -->
+            <div class="login-container-dark">
+                <a href="login.html"><img src="images/login-icon-dark.png" alt="Login icon" width="30px;" /></a>
+                <a href="login.html">LOGIN</a>
+            </div>
+            
+            <!-- logo area -->
+            <div class="logo-container">
+                <a href="index.html"><img src="images/Dream-Air-original.png" width="250px"></a>
             </div>
 
-            <!-- next line of service items -->
-            <h5>SOMETHING LIGHT</h5>
-            <div class="services-options-container"></div>
-            
-            <!-- next line of service items -->
-            <h5>SOMETHING TO DRINK</h5>
-            <div class="services-options-container"></div>
-
-            <!-- next line of service items -->
-            <h5>SOME ENTERTAINMENT</h5>
-            <div class="services-options-container"></div>
-
-            
+            <!-- timeline -->
+            <div class="timeline">
+                    <div class="timeline-btns">
+                        <img src="images/1-active.png" alt="first step" width="25px" />
+                        <p class="timeline-active">Flights</p>
+                    </div>
+                    <div class="timeline-dots">....................</div>
+                    <div class="timeline-btns">
+                        <img src="images/2-active.png" alt="second step" width="25px" />
+                        <p class="timeline-active">Seats</p>
+                    </div>
+                    <div class="timeline-dots">....................</div>
+                    <div class="timeline-btns">
+                        <img src="images/3-active.png" alt="third step" width="25px" />
+                        <p class="timeline-active">In-Flight</p>
+                    </div>
+                    <div class="timeline-dots">....................</div>
+                    <div class="timeline-btns">
+                        <img src="images/4-inactive.png" alt="fourth step" width="25px" />
+                        <p class="timeline-inactive">Passengers</p>
+                    </div>
+                    <div class="timeline-dots">....................</div>
+                    <div class="timeline-btns">
+                        <img src="images/5-inactive.png" alt="fifth step" width="25px" />
+                        <p class="timeline-inactive">Payment</p>
+                    </div>
+                </div>
         </div>
-        <!-- end of grey box -->
 
-        <!-- bottom bar -->
-        <div class="bottom-bar">
-            <div id="chosen-services">
-                <h6>In-Flight Services</h6>
-                <div id="services-picked-price">$39.75</div>
+               <!-- start of grey box -->
+               <div class="grey-box">
+
+                <div class="page-p-centered">
+                    <h1 class="h1-center">Choose Your In-flight Options</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla commodo non mauris non pharetra. Aliquam posuere a neque eget malesuada.</p>
+                    <br>
+    
+                </div>
+    
+    <h2 class="h2-inflight">SOMETHING SUBSTANTIAL</h2>
+
+                <div class="in-flight-dropdown-container">
+                    <select name="light" class="inflight-dropdown">
+                    <option value="none">None</option>
+                    <option value="cake">Pesto Pasta</option>
+                    <option value="wrap">Beef Lasagna</option>
+                    <option value="fruit">Baked Salmon</option>
+                    </select><br>
+                </div>
+    
+    
+    <table class="inflight-grid">
+      <tr>
+        <td>
+                    <div class="service-item">
+                        <img class="inflight-img" src="images/pasta.jpg" alt="pesto-pasta">
+                        <br>
+                        <p class="item-price">$18.95</p>
+                        <h5 class="item-title">Pesto Pasta</h5>
+                        <p class="item-description">Penne pasta in a pesto sauce with cherry tomatoes.</p>
+                    </div>
+        </td>
+        <td>
+                    <div class="service-item">
+                        <img class="inflight-img" src="images/lasagna.jpg" alt="beef-lasagna">
+                        <br>
+                        <p class="item-price">$18.95</p>
+                        <h5 class="item-title">Beef Lasagna</h5>
+                        <p class="item-description">Traditional Beef Lasagna with a side salad.</p>
+                    </div>
+        </td>
+        <td>
+                    <div class="service-item">
+                        <img class="inflight-img" src="images/salmon.jpg" alt="baked-salmon">
+                        <br>
+                        <p class="item-price">$18.95</p>
+                        <h5 class="item-title">Baked Salmon</h5>
+                        <p class="item-description">Baked Salmon, served with mixed vegetables.</p>
+                    </div>
+        </td>
+      </tr>
+    </table>
+    
+    <!-- next line of service items -->
+                <br>
+                <hr style="width:50%" />
+                <br>
+                <h2 class="h2-inflight">SOMETHING LIGHT</h2>
+
+                <div class="in-flight-dropdown-container">
+                    <select name="light" class="inflight-dropdown">
+                    <option value="none">None</option>
+                    <option value="cake">Crumbly Cake</option>
+                    <option value="wrap">Delicious Wrap</option>
+                    <option value="fruit">Fruit Salad</option>
+                    </select><br>
+                </div>
+    
+                <br>
+                <div class="services-options-container"></div>
+    
+                <table class="inflight-grid">
+                  <tr>
+                    <td>
+                                <div class="service-item">
+                                    <img class="inflight-img" src="images/cake.jpg" alt="crumbly-cake">
+                                    <br>
+                                    <p class="item-price">$7.95</p>
+                                    <h5 class="item-title">Crumbly Cake</h5>
+                                    <p class="item-description">Small piece of carrot cake with cream cheese frosting.</p>
+                                </div>
+                    </td>
+                    <td>
+                                <div class="service-item">
+                                    <img class="inflight-img" src="images/wrap.jpg" alt="delicious-wrap">
+                                    <br>
+                                    <p class="item-price">$7.95</p>
+                                    <h5 class="item-title">Delicious Wrap</h5>
+                                    <p class="item-description">Chicken and salad wrap with aioli.</p>
+                                </div>
+                    </td>
+                    <td>
+                                <div class="service-item">
+                                    <img class="inflight-img" src="images/fruit.jpg" alt="fruit-salad">
+                                    <br>
+                                    <p class="item-price">$7.95</p>
+                                    <h5 class="item-title">Fruit Salad</h5>
+                                    <p class="item-description">A fresh mix of australian grown fruits.</p>
+                                </div>
+                    </td>
+                  </tr>
+                </table>
+    
+                <!-- next line of service items -->
+                <br>
+                <hr style="width:50%" />
+                <br>
+                <h2 class="h2-inflight">SOMETHING TO DRINK</h2>
+
+                <div class="in-flight-dropdown-container">
+                    <select name="light" class="inflight-dropdown">
+                    <option value="none">None</option>
+                    <option value="cake">Sprite</option>
+                    <option value="wrap">Diet Coke</option>
+                    <option value="fruit">Fanta</option>
+                    </select><br>
+                </div>
+    
+                <div class="services-options-container"></div>
+    
+                <table class="inflight-grid">
+                  <tr>
+                    <td>
+                                <div class="service-item">
+                                    <img class="inflight-img" src="images/sprite.jpg" alt="sprite">
+                                    <br>
+                                    <p class="item-price">$3.00</p>
+                                    <h5 class="item-title">Sprite</h5>
+                                    <p class="item-description">Served with ice.</p>
+                                </div>
+                    </td>
+                    <td>
+                                <div class="service-item">
+                                    <img class="inflight-img" src="images/coke.jpg" alt="coke">
+                                    <br>
+                                    <p class="item-price">$3.00</p>
+                                    <h5 class="item-title">Diet Coke</h5>
+                                    <p class="item-description">Served with ice.</p>
+                                </div>
+                    </td>
+                    <td>
+                                <div class="service-item">
+                                    <img class="inflight-img" src="images/fanta.jpg" alt="fanta">
+                                    <br>
+                                    <p class="item-price">$3.00</p>
+                                    <h5 class="item-title">Fanta</h5>
+                                    <p class="item-description">Served with ice.</p>
+                                </div>
+                    </td>
+                  </tr>
+                </table>
+    
+                <!-- next line of service items -->
+                <br>
+                <hr style="width:50%" />
+                <br>
+                <h2 class="h2-inflight">SOME ENTERTAINMENT</h2>
+
+                <div class="in-flight-dropdown-container">
+                    <select name="light" class="inflight-dropdown">
+                    <option value="none">None</option>
+                    <option value="cake">50 First Dates</option>
+                    <option value="wrap">Finding Nemo</option>
+                    <option value="fruit">The Notebook</option>
+                    </select><br>
+                </div>
+    
+                <div class="services-options-container"></div>
+                <table class="inflight-grid">
+                  <tr>
+                    <td>
+                                <div class="service-item">
+                                    <img class="inflight-img" src="images/50-first-dates.jpg" alt="50-first-dates">
+                                    <br>
+                                    <p class="item-price">$10.50</p>
+                                    <h5 class="item-title">50 First Dates</h5>
+                                    <p class="item-description">A romantic comedy with an all-star cast.</p>
+                                </div>
+                    </td>
+                    <td>
+                                <div class="service-item">
+                                    <img class="inflight-img" src="images/nemo.jpg" alt="finding-nemo">
+                                    <br>
+                                    <p class="item-price">$10.50</p>
+                                    <h5 class="item-title">Finding Nemo</h5>
+                                    <p class="item-description">Something for the whole family to enjoy.</p>
+                                </div>
+                    </td>
+                    <td>
+                                <div class="service-item">
+                                    <img class="inflight-img" src="images/notebook.jpg" alt="the-notebook">
+                                    <br>
+                                    <p class="item-price">$10.50</p>
+                                    <h5 class="item-title">The Notebook</h5>
+                                    <p class="item-description">A romantic drama based on the Nicholas Sparks novel.</p>
+                                </div>
+                    </td>
+                  </tr>
+                </table>
+                <br /><br />
             </div>
-            <button id="confirm-flight">Confirm</button>
-        </div>
-        <!-- end of bottom bar -->
+            <!-- end of grey box -->
+
+            <div id="bottom-display-bar" class="bottom-bar">
+                <div class="bottom-bar">
+                        <div id="chosen-details">
+                            <div id="in-flight-picked"><p>In-Flight Services</p></div>
+                            <div id="in-flight-picked-price"><p>$39.75</p></div><br />
+                        </div>
+                        <button id="confirm-in-flight">Confirm</button>
+                </div>
+            </div>
+                <!-- end of bottom bar -->
 
     </body>
 </html>

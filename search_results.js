@@ -165,7 +165,8 @@ function bookMe(flightID) {
 											departDate: sessionStorage.getItem("departDate"),
 											arriveDate: sessionStorage.getItem("arriveDate"),
 											seat: "AA",
-											food: "AA",
+											foodSubstantial: "AA",
+											foodLight: "AA",
 											drink: "AA",
 											entertainment: "AA",
 											person: {

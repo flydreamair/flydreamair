@@ -47,7 +47,7 @@ $(function () {
 
                     $("#secondOut").append(html_out);
 
-                    let total = currentFlight.ECTicket + 7.95 * 3;
+                    //let total = currentFlight.ECTicket + 7.95 * 3;
 
                     $("#flights-total-price").text("$" + total);
 

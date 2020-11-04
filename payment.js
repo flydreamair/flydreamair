@@ -38,6 +38,30 @@ $(function () {
 
                     $("#firstOut").append(html_out);
 
+                    html_out = "";
+
+                    html_out += "<tr><td>" + currentFlight.food + "</td><td>" + "$7.95" + "</td></tr>";
+                    html_out += "<tr><td>" + currentFlight.drink + "</td><td>" + "$7.95" + "</td></tr>";
+                    html_out += "<tr><td>" + currentFlight.entertainment + "</td><td>" + "$7.95" + "</td></tr>";
+                    html_out += '< tr ><td colspan="2"><a href="in-flight.html">edit</a></td></tr >';
+
+                    $("#secondOut").append(html_out);
+
+                    let total = currentFlight.ECTicket + 7.95 * 3;
+
+                    $("#flights-total-price").text("$" + total);
+
+                    html_out = "";
+
+                    html_out += "<p>" + cursor.value.title + " " + cursor.value.givenNames + " " + cursor.value.lastName + "</p>";
+
+                    html_out += "<p>" + cursor.value.address.street + ", " + cursor.value.address.city  + " " + cursor.value.address.state + " " + cursor.value.address.postCode + "</p>";
+                    html_out += "<p>" + cursor.key + "</p>";
+
+                    html_out += "<a href = 'account.html'>Edit</a>";
+
+                    $("#thirdOut").append(html_out);
+
                 } else
                     cursor.continue()
 

@@ -119,6 +119,9 @@ label#state-label {
 .covid_info_text a, #covid-form a {
     color: #ff6200;
 }
+#state_covid_info {
+    font-family: Roboto Slab;
+}
 #last-updated {
     text-align: center;
 }

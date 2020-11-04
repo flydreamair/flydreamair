@@ -2,14 +2,14 @@ var noselect_covid_html = `
 Please select a state.
 `;
 var ACT_covid_html = `
-<p>The information on this page has been taken directly from: <a href="https://www.covid19.act.gov.au/community/travel/nsw#Travelling-from-NSW-to-the-ACT">https://www.covid19.act.gov.au/community/travel/nsw#Travelling-from-NSW-to-the-ACT</a></p>
+<p>The information on this page has been taken directly from: <a href="https://www.covid19.act.gov.au/community/travel/nsw#Travelling-from-NSW-to-the-ACT" target="_blank">www.covid19.act.gov.au/community/travel/nsw#Travelling-from-NSW-to-the-ACT</a></p>
 <h2>Travelling from NSW to the ACT</h2>
 <p>We&nbsp;urge&nbsp;anyone from&nbsp;COVID-affected areas to reconsider travel to the ACT.</p>
 <p>If you have recently been in NSW, you should keep up to date with the&nbsp;<a href="https://www.nsw.gov.au/covid-19/latest-news-and-updates" target="_blank">public health alerts from NSW Health</a>.</p>
 <p>People who have been in the&nbsp;specific Local Government Areas (LGAs) and suburbs in Greater Sydney&nbsp;are advised not to visit or work in high-risk settings, including aged care facilities, hospitals and correctional facilities, for a period of 14 days after leaving these areas.</p>
 <p>These LGAs and suburbs are listed at the top of this web page. For a full list of affected suburbs, please visit the&nbsp;<a href="https://www.health.nsw.gov.au/Infectious/covid-19/Pages/suburb-postcode-lga.aspx" target="_blank">NSW Health website</a>.</p>
 <p>There is no requirement for people to quarantine.</p>
-<p>For more information on advice for high-risk settings, please visit the&nbsp;<a href="https://www.health.act.gov.au/health-professionals/chief-health-officer-alerts">Chief Health Officer alerts</a> page.</p>
+<p>For more information on advice for high-risk settings, please visit the&nbsp;<a href="https://www.health.act.gov.au/health-professionals/chief-health-officer-alerts target="_blank"">Chief Health Officer alerts</a> page.</p>
 
 `;
 var NSW_covid_html = `
@@ -115,23 +115,23 @@ var QLD_covid_html = `
                     </div>
 `;
 var TAS_covid_html = `
-<p>The information on this page has been taken directly from: <a href="https://www.health.gov.au/news/health-alerts/novel-coronavirus-2019-ncov-health-alert/coronavirus-covid-19-current-situation-and-case-numbers/covid-19-in-victoria">https://www.health.gov.au/news/health-alerts/novel-coronavirus-2019-ncov-health-alert/coronavirus-covid-19-current-situation-and-case-numbers/covid-19-in-victoria</a></p>
+<p>The information on this page has been taken directly from: <a href="https://www.health.gov.au/news/health-alerts/novel-coronavirus-2019-ncov-health-alert/coronavirus-covid-19-current-situation-and-case-numbers/covid-19-in-victoria" target="_blank">www.health.gov.au/news/health-alerts/novel-coronavirus-2019-ncov-health-alert/coronavirus-covid-19-current-situation-and-case-numbers/covid-19-in-victoria</a></p>
 <h2 id="border-closures"><strong>Border closures</strong></h2>
-<p>The New South Wales border with Victoria closed at 12:01am on Wednesday 8 July 2020. There is a <a href="https://www.service.nsw.gov.au/transaction/apply-covid-19-nsw-border-entry-permit">permit system</a> in place for people who need to travel from Victoria into NSW. Information about the border restrictions and permit categories is on the <a href="https://www.nsw.gov.au/covid-19/what-you-can-and-cant-do-under-rules/border-restrictions">NSW Government website.</a></p>
-<p>Only essential travellers can enter South Australia from Victoria. South Australians can no longer return from Victoria. If you are travelling into South Australia, by road or via the Adelaide airport, you need to complete the&nbsp;<a href="https://www.police.sa.gov.au/online-services/cross-border-travel-application">cross border pre-approval form</a>&nbsp;at least 72 hours before you arrive.</p>
-<p>There are border restrictions in place in the ACT. For further information visit the <a href="https://www.covid19.act.gov.au/what-you-can-do/faqs-changes-to-restrictions/information-for-travellers-returning-to-the-act-from-victoria">Advice for travel to ACT from Victoria</a> page. For exceptional circumstances, you can make an <a href="https://www.covid19.act.gov.au/exemption-application">application for exemption</a> to enter the ACT.</p>
-<p>To find out more about travel restrictions for these and other states and territories you can use the <a href="https://www.healthdirect.gov.au/covid19-restriction-checker">Healthdirect restriction checker</a>.</p>
+<p>The New South Wales border with Victoria closed at 12:01am on Wednesday 8 July 2020. There is a <a href="https://www.service.nsw.gov.au/transaction/apply-covid-19-nsw-border-entry-permit" target="_blank">permit system</a> in place for people who need to travel from Victoria into NSW. Information about the border restrictions and permit categories is on the <a href="https://www.nsw.gov.au/covid-19/what-you-can-and-cant-do-under-rules/border-restrictions" target="_blank">NSW Government website.</a></p>
+<p>Only essential travellers can enter South Australia from Victoria. South Australians can no longer return from Victoria. If you are travelling into South Australia, by road or via the Adelaide airport, you need to complete the&nbsp;<a href="https://www.police.sa.gov.au/online-services/cross-border-travel-application" target="_blank">cross border pre-approval form</a>&nbsp;at least 72 hours before you arrive.</p>
+<p>There are border restrictions in place in the ACT. For further information visit the <a href="https://www.covid19.act.gov.au/what-you-can-do/faqs-changes-to-restrictions/information-for-travellers-returning-to-the-act-from-victoria" target="_blank">Advice for travel to ACT from Victoria</a> page. For exceptional circumstances, you can make an <a href="https://www.covid19.act.gov.au/exemption-application" target="_blank">application for exemption</a> to enter the ACT.</p>
+<p>To find out more about travel restrictions for these and other states and territories you can use the <a href="https://www.healthdirect.gov.au/covid19-restriction-checker" target="_blank">Healthdirect restriction checker</a>.</p>
 `;
 var VIC_covid_html = `
-<p>The information on this page has been taken directly from: <a href="https://www.health.gov.au/news/health-alerts/novel-coronavirus-2019-ncov-health-alert/coronavirus-covid-19-current-situation-and-case-numbers/covid-19-in-victoria">https://www.health.gov.au/news/health-alerts/novel-coronavirus-2019-ncov-health-alert/coronavirus-covid-19-current-situation-and-case-numbers/covid-19-in-victoria</a></p>
+<p>The information on this page has been taken directly from: <a href="https://www.health.gov.au/news/health-alerts/novel-coronavirus-2019-ncov-health-alert/coronavirus-covid-19-current-situation-and-case-numbers/covid-19-in-victoria" target="_blank">www.health.gov.au/news/health-alerts/novel-coronavirus-2019-ncov-health-alert/coronavirus-covid-19-current-situation-and-case-numbers/covid-19-in-victoria</a></p>
 <h2 id="border-closures"><strong>Border closures</strong></h2>
-<p>The New South Wales border with Victoria closed at 12:01am on Wednesday 8 July 2020. There is a <a href="https://www.service.nsw.gov.au/transaction/apply-covid-19-nsw-border-entry-permit">permit system</a> in place for people who need to travel from Victoria into NSW. Information about the border restrictions and permit categories is on the <a href="https://www.nsw.gov.au/covid-19/what-you-can-and-cant-do-under-rules/border-restrictions">NSW Government website.</a></p>
-<p>Only essential travellers can enter South Australia from Victoria. South Australians can no longer return from Victoria. If you are travelling into South Australia, by road or via the Adelaide airport, you need to complete the&nbsp;<a href="https://www.police.sa.gov.au/online-services/cross-border-travel-application">cross border pre-approval form</a>&nbsp;at least 72 hours before you arrive.</p>
-<p>There are border restrictions in place in the ACT. For further information visit the <a href="https://www.covid19.act.gov.au/what-you-can-do/faqs-changes-to-restrictions/information-for-travellers-returning-to-the-act-from-victoria">Advice for travel to ACT from Victoria</a> page. For exceptional circumstances, you can make an <a href="https://www.covid19.act.gov.au/exemption-application">application for exemption</a> to enter the ACT.</p>
-<p>To find out more about travel restrictions for these and other states and territories you can use the <a href="https://www.healthdirect.gov.au/covid19-restriction-checker">Healthdirect restriction checker</a>.</p>
+<p>The New South Wales border with Victoria closed at 12:01am on Wednesday 8 July 2020. There is a <a href="https://www.service.nsw.gov.au/transaction/apply-covid-19-nsw-border-entry-permit" target="_blank">permit system</a> in place for people who need to travel from Victoria into NSW. Information about the border restrictions and permit categories is on the <a href="https://www.nsw.gov.au/covid-19/what-you-can-and-cant-do-under-rules/border-restrictions" target="_blank">NSW Government website.</a></p>
+<p>Only essential travellers can enter South Australia from Victoria. South Australians can no longer return from Victoria. If you are travelling into South Australia, by road or via the Adelaide airport, you need to complete the&nbsp;<a href="https://www.police.sa.gov.au/online-services/cross-border-travel-application" target="_blank">cross border pre-approval form</a>&nbsp;at least 72 hours before you arrive.</p>
+<p>There are border restrictions in place in the ACT. For further information visit the <a href="https://www.covid19.act.gov.au/what-you-can-do/faqs-changes-to-restrictions/information-for-travellers-returning-to-the-act-from-victoria" target="_blank">Advice for travel to ACT from Victoria</a> page. For exceptional circumstances, you can make an <a href="https://www.covid19.act.gov.au/exemption-application" target="_blank">application for exemption</a> to enter the ACT.</p>
+<p>To find out more about travel restrictions for these and other states and territories you can use the <a href="https://www.healthdirect.gov.au/covid19-restriction-checker" target="_blank">Healthdirect restriction checker</a>.</p>
 `;
 var WA_covid_html = `
-<p>The information on this page has been taken directly from: <a href="https://www.wa.gov.au/organisation/department-of-the-premier-and-cabinet/covid-19-coronavirus-travel-advice#wa-state-border-closure">https://www.wa.gov.au/organisation/department-of-the-premier-and-cabinet/covid-19-coronavirus-travel-advice#wa-state-border-closure</a></p>
+<p>The information on this page has been taken directly from: <a href="https://www.wa.gov.au/organisation/department-of-the-premier-and-cabinet/covid-19-coronavirus-travel-advice#wa-state-border-closure" target="_blank">www.wa.gov.au/organisation/department-of-the-premier-and-cabinet/covid-19-coronavirus-travel-advice#wa-state-border-closure</a></p>
 <div class="block block-layout-builder block-field-blocknodegovernment-organisation-subpagetitle">
   
     
@@ -154,9 +154,9 @@ var WA_covid_html = `
 
 <p>Most regional travel restrictions were removed on Friday, 5 June 2020.</p>
 
-<p>Travel is now permitted throughout all regions within WA, except for entry into <a href="/organisation/department-of-the-premier-and-cabinet/covid-19-coronavirus-remote-aboriginal-communities-restrictions-entering" title="COVID-19 coronavirus: Remote Aboriginal communities - restrictions on entering"> remote Aboriginal communities</a>.</p>
+<p>Travel is now permitted throughout all regions within WA, except for entry into <a href="https://www.wa.gov.au/organisation/department-of-the-premier-and-cabinet/covid-19-coronavirus-remote-aboriginal-communities-travel" target="_blank" title="COVID-19 coronavirus: Remote Aboriginal communities - restrictions on entering"> remote Aboriginal communities</a>.</p>
 
-<p>Western Australians are encouraged to &apos;<a href="https://www.westernaustralia.com/en/pages/wander_out_yonder.aspx/">Wander out Yonder</a>' and take a different kind of holiday, enjoy a staycation in Perth or travel to new places, and seek out new experiences across the state.</p>
+<p>Western Australians are encouraged to &apos;<a href="https://www.westernaustralia.com/en/pages/wander_out_yonder.aspx/" target="_blank">Wander out Yonder</a>' and take a different kind of holiday, enjoy a staycation in Perth or travel to new places, and seek out new experiences across the state.</p>
 </div>
       </div>
 </div>
@@ -165,9 +165,9 @@ var WA_covid_html = `
 `;
 
 var SA_covid_html = `
-<p>The information on this page has been taken directly from: <a href="https://www.covid-19.sa.gov.au/emergency-declarations/cross-border-travel">https://www.covid-19.sa.gov.au/emergency-declarations/cross-border-travel</a></p>
+<p>The information on this page has been taken directly from: <a href="https://www.covid-19.sa.gov.au/emergency-declarations/cross-border-travel" target="_blank">www.covid-19.sa.gov.au/emergency-declarations/cross-border-travel</a></p>
 <h1>Cross-border travel</h1>
 <p>A direction is in place regarding traffic entering South Australia.</p>
-<p>If you are travelling into South Australia, by road or via the Adelaide airport, you need to complete the <a href="https://www.police.sa.gov.au/online-services/cross-border-travel-application" rel="external">cross border pre-approval form</a> 14 days prior to your arrival.</p>
+<p>If you are travelling into South Australia, by road or via the Adelaide airport, you need to complete the <a href="https://www.police.sa.gov.au/online-services/cross-border-travel-application" target="_blank" rel="external">cross border pre-approval form</a> 14 days prior to your arrival.</p>
 <p>Pre-approval will speed up the border crossing process and provide certainty for you about any restrictions that may apply before reaching the border.</p>
 `;

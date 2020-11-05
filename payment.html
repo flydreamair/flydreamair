@@ -1,0 +1,154 @@
+<html>
+<head>
+    <title>FlyDreamAir</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="a.js"></script>
+    <script src="seatBooking.js"></script>
+    <script src="payment.js"></script>
+    <script>
+        function confirmPayment() {
+
+            window.open("account.html", "_parent");
+
+        }
+    </script>
+</head>
+    <body>
+
+        <div class="page-container">
+            <!-- login area -->
+            <div class="login-container-dark">
+                <a><img src="images/login-icon-dark.png" alt="Login icon" width="30px;" /></a>
+                <a id="currentUser" href="login.html">LOGIN</a>
+            </div>
+            
+            <!-- logo area -->
+            <div class="logo-container">
+                <a href="index.html"><img src="images/Dream-Air-original.png" width="250px"></a>
+            </div>
+
+            <!-- timeline -->
+            <div class="timeline">
+                    <div class="timeline-btns">
+                        <img src="images/1-active.png" alt="first step" width="25px" />
+                        <p class="timeline-active">Flights</p>
+                    </div>
+                    <div class="timeline-dots">....................</div>
+                    <div class="timeline-btns">
+                        <img src="images/2-active.png" alt="second step" width="25px" />
+                        <p class="timeline-active">Seats</p>
+                    </div>
+                    <div class="timeline-dots">....................</div>
+                    <div class="timeline-btns">
+                        <img src="images/3-active.png" alt="third step" width="25px" />
+                        <p class="timeline-active">In-Flight</p>
+                    </div>
+                    <div class="timeline-dots">....................</div>
+                    <div class="timeline-btns">
+                        <img src="images/4-active.png" alt="fourth step" width="25px" />
+                        <p class="timeline-active">Passengers</p>
+                    </div>
+                    <div class="timeline-dots">....................</div>
+                    <div class="timeline-btns">
+                        <img src="images/5-active.png" alt="fifth step" width="25px" />
+                        <p class="timeline-active">Payment</p>
+                    </div>
+                </div>
+        </div>
+
+            <!-- start of grey box that displays the flights available -->
+            <div class="grey-box">
+
+                        <div class="page-p-centered">
+                            <h1 class="h1-center">Payment</h1>
+                            <p>Confirm your selections and make payment.</p>
+                        </div>
+
+
+                <!-- start of white box -->
+                <div class="white-box">
+
+                                <div class="search-flight-container">
+                                    <div class="search-flight-results">
+                                        <!-- start flight result 1 -->
+                                        <div id="firstOut" class="search-flight-box-payment">
+                                                   
+                                        </div>
+                                        <!-- end flight result 1 -->
+                                    </div>
+                                    <!-- end flight result 2 -->
+                                </div>
+                        
+
+
+
+
+
+                                <!-- in-flight services chosen -->
+                                <h3 style="text-align: center;">In-flight Choices</h3>
+                                <table id="secondOut" class="in-flight-choices-container">
+                                </table>
+
+
+
+                                <!-- passenger details -->
+                                <div class="passenger-details-payment">
+                                    <h3 style="text-align: center;">Passenger Details</h3>
+                                    <p>Ms Jane Mary Doe</p>
+                                    <p>100 Something Street, SampleCity WA 6000</p>
+                                    <p>jane@bigpond.com.au</p>
+                                    <a href="accounts.html">edit</a>
+                                </div>
+
+
+
+                                <!-- start total -->
+                                <div class="total-price-payment">
+                                    <h2>TOTAL</h2>
+                                    <p id="flights-total-price"></p>
+
+                                    <!-- payment method -->
+                                    <div>
+                                        <label for="payment-method">Payment Method</label><br />
+                                        <select name="payment-method" id="payment-method">
+                                            <option value="" disabled selected hidden></option>
+                                            <option value="Adult1">Credit Card</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <!-- end total -->
+
+
+
+                                
+
+
+
+        
+                <!-- end of white box -->
+                </div>
+
+                            <!-- covid info -->
+                            <div class="warning-box">
+                                <img src="images/exclamation.png" alt="Exclamation point" width="30px" height="30px"/>
+                                <div class="covid-warning-text">
+                                    <h2>Important information about your flight</h2>
+                                    <p>The COVID-19 pandemic has caused major disruptions to flight schedules. Please be advised that your booking may be subject to change.</p>
+                                    <p>For information on COVID-19 travel rules & regulations for each state, <a href="covid-info.html" target="_blank">please click here.</a></p>
+                                </div>
+                            </div>
+
+
+            </div>
+            <!-- end of grey box -->
+
+            <!-- bottom bar -->
+            <div class="bottom-bar">
+                <a href="account.html"> <button id="confirm-payment">Confirm & Pay</button></a>
+            </div>
+            <!-- end of bottom bar -->
+
+
+    </body>
+</html>

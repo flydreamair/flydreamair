@@ -1,0 +1,63 @@
+<html>
+<head>
+    <title>FlyDreamAir</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="employees.js"></script>
+	<script src="a.js"></script>
+	<script src="c.js"></script>
+</head>
+    <body>
+		<div class="covid-info">We understand that the COVID-19 pandemic has caused major changes. Please click
+			<a href="covid-info.html">HERE</a> for information on COVID-19 travel rules & regulations for each state.</div>
+
+        <div class="flight-bg">
+            <div class="page-container">
+ 
+                <!-- logo area -->
+                <div class="logo-container">
+
+                <a href="index.html"><img src="images/Dream-Air-White.png" width="250px"></a>
+
+                </div>
+            </div>
+        </div>
+        <!-- end of page container -->
+
+            <!-- account container -->
+            <div id="account-container">
+                    <div id="account-header">
+                        <h2>Employee Account</h2>
+                        <p>Edit your contact details.</p>
+                        <br />
+                    </div>
+
+                    <div id="grey-account-box">
+                        <h4>Employee Name</h4>
+                        <p id="contactDetailsName" class="contact-details-name"></p>
+                        <h4>Employee Email</h4>
+                        <p id="contactDetailsEmail" class="contact-details-email"></p>
+                        <br />
+                        <a href="">Edit your contact details or change your password</a>
+                    </div>
+
+                    <div id="account-header">
+                        <h2>Search Customer</h2>
+                        <input type="text" size="20" id="email" placeholder="Customers Email" />
+						<button onclick="searchCust()">Search</button>
+                        <br />
+                    </div>
+					
+					
+                <!-- upcoming flight bookings -->
+                <h2 style="text-align: center;">Upcoming flight bookings for Customer</h2>
+
+                <div id="finalPassengerView" class="white-box">
+                </div>
+				
+                <button onclick="logout()">Log out</button>
+
+            </div>
+            <!-- end of account container code -->
+    </body>
+</html>

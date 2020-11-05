@@ -1,0 +1,83 @@
+<html>
+<head>
+    <title>FlyDreamAir</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="a.js"></script>
+    <script src="search_results.js"></script>
+</head>
+    <body>
+		<div class="covid-info">We understand that the COVID-19 pandemic has caused major changes. Please click
+			<a href="covid-info.html">HERE</a> for information on COVID-19 travel rules & regulations for each state.</div>
+            
+        <div class="page-container">
+            <!-- login area -->
+            <div class="login-container-dark">
+                <img src="images/login-icon-dark.png" alt="Login icon" width="30px;" />
+                <a id="currentUser" href="login.html">LOGIN</a>
+            </div>
+            
+            <!-- logo area -->
+            <div class="logo-container">
+                <a href="index.html"><img src="images/Dream-Air-original.png" width="250px"></a>
+            </div>
+
+            <!-- timeline -->
+            <div class="timeline">
+                <div class="timeline-btns">
+                    <img src="images/1-active.png" alt="first step" width="25px" />
+                    <p class="timeline-active">Flights</p>
+                </div>
+                <div class="timeline-dots">....................</div>
+                <div class="timeline-btns">
+                    <img src="images/2-inactive.png" alt="second step" width="25px" />
+                    <p class="timeline-inactive">Seats</p>
+                </div>
+                <div class="timeline-dots">....................</div>
+                <div class="timeline-btns">
+                    <img src="images/3-inactive.png" alt="third step" width="25px" />
+                    <p class="timeline-inactive">In-Flight</p>
+                </div>
+                <div class="timeline-dots">....................</div>
+                <div class="timeline-btns">
+                    <img src="images/4-inactive.png" alt="fourth step" width="25px" />
+                    <p class="timeline-inactive">Passengers</p>
+                </div>
+                <div class="timeline-dots">....................</div>
+                <div class="timeline-btns">
+                    <img src="images/5-inactive.png" alt="fifth step" width="25px" />
+                    <p class="timeline-inactive">Payment</p>
+                </div>
+            </div>
+        </div>
+
+            <!-- flight details that were searched -->
+            <div class="flight-details-container">
+                <div class="flight-details-overview">
+                    <img src="images/departure.png" alt="departure icon" width="50px" height="50px" />
+                    <div class="flight-details">
+                        <p id="from-to"></p>
+                        <p id="search-results-departure-date" class="departure-date"></p>
+                        <a href="index.html" class="change-search-criteria">Change search criteria</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- start of grey box that displays the flights available -->
+            <div id='display-results' class="grey-box">
+
+            </div>
+            <!-- end of grey box -->
+
+            <!-- bottom bar -->
+            <div id="bottom-display-bar" class="bottom-bar">
+                <div id="chosen-details">
+                    <div id="flight-picked"><p>Perth to Sydney leaving Fri, 09/10/2020 @ 13:00 on DA735</p></div>
+                    <div id="flight-picked-price"><p>$626</p></div>
+                </div><br />
+                <button id="confirm-flight">Confirm flight</button>
+            </div>
+            <!-- end of bottom bar -->
+
+    </body>
+</html>

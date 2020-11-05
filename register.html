@@ -1,0 +1,102 @@
+<html>
+<head>
+	<title>FlyDreamAir</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="users.js"></script>
+</head>
+<body>
+
+	<div class="flight-bg">
+		<div class="page-container">
+			<!-- login area -->
+			<div class="login-container">
+				<img src="images/login-icon.png" alt="Login icon" width="30px">
+				<a href="login.html">LOGIN</a>
+			</div>
+
+			<!-- logo area -->
+			<div class="logo-container">
+				<img src="images/Dream-Air-White.png" width="250px">
+			</div>
+		</div>
+	</div>
+	<!-- end of page container -->
+	<!-- account container -->
+	<div id="account-container">
+		<div id="account-header">
+			<h2>Register</h2>
+			<p>Register your account</p>
+			<br>
+		</div>
+
+		<div class="contact-details-container">
+				<h3>Passenger</h3>
+				<!-- dropdown -->
+				<div>
+					<label id="t-label" for="title-selection">Title</label><br />
+					<select class="myInfo" id="t" name="title-selection" id="title-selection">
+						<option value="Miss">Miss</option>
+						<option value="Ms">Ms</option>
+						<option value="Mrs">Mrs</option>
+						<option value="Mr">Mr</option>
+						<option value="Master">Master</option>
+						<option value="MX">MX</option>
+						<option value="Sir">Sir</option>
+						<option value="Dr">Dr</option>
+						<option value="Prof">Prof</option>
+					</select>
+				</div>
+				<div class="passenger-details-container">
+					<div class="given-name">
+						<label  id="g-label" for="given-names">Given Names</label><br />
+						<input class="myInfo" id="g" name="given-names" type="text"><br />
+					</div>
+					<div class="last-name">
+						<label  id="ln-label" for="last-name">Last Name</label><br />
+						<input class="myInfo" id="ln" name="last-name" type="text">
+					</div>
+				</div>
+
+				<br /><br /><hr />
+				<br /><h3>Address</h3>
+				<div class="street-address">
+					<label  id="s-label" for="street">Street Address</label><br />
+					<input class="myInfo" id="s" name="street" type="text"><br />
+				</div>
+				<div class="passenger-details-container">
+					<div class="city">
+						<label  id="c-label" for="city">City</label><br />
+						<input class="myInfo" id="c" name="city" type="text"><br />
+					</div>
+					<div class="state">
+						<label  id="st-label" for="state">State</label><br />
+						<input class="myInfo" id="st" name="state" type="text"><br />
+					</div>
+					<div class="post-code">
+						<label id="pc-label" for="post-code">Post Code</label><br />
+						<input class="myInfo" id="pc"name="post-code" type="text"><br />
+					</div>
+				</div>
+
+				<br /><br /><hr />
+				<br /><h3>Account Login Details</h3>
+				<div class="passenger-details-container">
+					<div class="email-address">
+						<label id="em-label" for="email-address">Email address</label><br />
+						<input class="myInfo" id="em" name="email-address" type="text"><br />
+					</div>
+					<div id="errorDB" class="choose-password">
+						<label id="pw-label" for="choose-password">Choose a password</label><br />
+						<input class="myInfo" id="pw" name="choose-password" type="password"><br />
+					</div>
+				</div>
+				<div class="account-save-button"><input type="submit" value="Register" onclick="registerMe()"></div>
+		</div>
+
+
+	</div>
+	<!-- end of account container code -->
+
+</body>
+</html>
